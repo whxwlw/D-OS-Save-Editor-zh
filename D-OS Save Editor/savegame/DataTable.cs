@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 namespace D_OS_Save_Editor
 {
     public class DataTable
@@ -1314,7 +1314,12 @@ namespace D_OS_Save_Editor
             case "scroll": result = ItemSortType.Scroll; break;
             case "grn": result = ItemSortType.Granade; break;
             case "food": result = ItemSortType.Food; break;
-            case "con": result = ItemSortType.Food; break;
+            case "con":
+                if (nameParts.Length >= 2 && nameParts[1] == "potion")
+                    result = ItemSortType.Potion;
+                else
+                    result = ItemSortType.Food;
+                break;
             case "fur": result = ItemSortType.Furniture; break;
             case "loot": result = ItemSortType.Loot; break;
             case "quest": result = ItemSortType.Quest; break;
