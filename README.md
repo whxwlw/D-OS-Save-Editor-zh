@@ -1,89 +1,98 @@
-# D-OS Save Editor
+﻿# D-OS 存档编辑器
 
-A save editor for **Divinity: Original Sin – Enhanced Edition**.
+**神界：原罪——增强版** 的存档修改工具，全面汉化及修改、改进版本。
 
-> ⚠️ This editor only works for *Divinity: Original Sin – Enhanced Edition*. Do **not** use it for the original *Divinity: Original Sin* or for *Divinity: Original Sin 2*.
-
-This is a fork of [Se7enthSeal/D-OS-Save-Editor](https://github.com/Se7enthSeal/D-OS-Save-Editor), which is itself based on the original [AnthonyZJiang/D-OS-Save-Editor](https://github.com/AnthonyZJiang/D-OS-Save-Editor), with a number of fixes and new features (see [Changes in this fork](#changes-in-this-fork)).
+> ⚠️ 本修改器仅适用于 **神界：原罪——增强版（Divinity: Original Sin – Enhanced Edition）**的**最新版本2.0.119.430**。请勿用于原版《神界：原罪》或《神界：原罪2》。
 
 ---
 
-## Download & install
+## 📥 下载与安装
 
-1. Go to the [**Releases**](../../releases) page and download the latest `D-OS-Save-Editor-vX.Y.Z.zip`.
-2. Extract the zip anywhere (keep all the files together — the `.exe` needs the DLLs and the `ItemTemplates` folder next to it).
-3. Run **`D-OS Save Editor.exe`**.
+1. 前往 [Releases](../../releases) 页面下载最新的 `D-OS-Save-Editor-vX.Y.Z.zip`。
+2. 解压到任意目录。
+3. 运行 **`D-OS Save Editor.exe`**。
 
-Requirements: Windows with **.NET Framework 4.8** (already present on up-to-date Windows 10/11).
+系统要求：Windows **.NET Framework 4.8**（Windows 10/11 已自带）。
 
-> 💾 **Always back up your save before editing.** Copy the save folder somewhere safe first. Edited saves are not guaranteed to be reversible.
-
----
-
-## How to use
-
-1. **Launch** the editor and **open your save** — pick the savegame from the list.
-2. **Choose a character** from the drop-down at the top (party members each have their own inventory and stats).
-3. Make changes on the tabs (below).
-4. Click **Save**. The editor writes your changes back into the `.lsv` save file.
-5. Load the save in-game.
-
-### Tabs
-
-- **Stats** — vitality, experience, attribute/ability/talent points, etc.
-- **Abilities** — points in each ability (e.g. *Crafting*, *Blacksmithing*, *Lucky Charm*, the combat/magic schools). Abilities cap at **5** in-game; gear can raise the effective value on top of that.
-- **Traits** — personality trait values.
-- **Talents** — learned talents.
-- **Inventory** — edit existing items: rarity (Common → Unique), durability, and **Modifiers** (boosts). Right-click the Modifiers box to add/copy/delete a modifier.
-- **Add Items** — add new items to the selected character's inventory.
-
-### Adding items
-
-1. On the **Add Items** tab, use the category checkboxes and the **Filter** box to find an item.
-   - Items are listed by their **internal template name**, not their in-game display name — e.g. a lockpick is `TOOL_LockPick_A` and a Tormented Soul is `LOOT_Soul_Tormented_A`. Search by a keyword (e.g. `tormented`) and make sure the matching category (e.g. *Loot*) is checked.
-2. Click an item to add it to the list on the right; set the **amount** and, for weapons/armor, pick a **rarity**.
-3. Click **Apply changes** — the item appears in the **Inventory** tab as a *(pending add)* row.
-4. Click **Save**, then load the game. The item will be in that character's inventory.
-
-> Tip: make sure the correct character is selected in the drop-down *before* adding items — items go to whichever character is currently selected.
-
-### Editing durability / modifiers on added equipment
-
-A freshly-added weapon or piece of armor comes in at full durability and can be re-edited (durability, rarity, modifiers) after you **Save and reopen** the file.
+> 💾 **修改存档前请务必备份！** 修改后的存档无法保证能还原。
 
 ---
 
-## Changes in this fork
+## 📖 使用方法
+注意：一些mod会修改游戏的数据，可能会和编辑器的数据冲突导致一些功能无法正常使用！！
 
-- Add new items to a character's inventory, with a per-item **rarity** picker.
-- Added items now reliably **persist into the game** (fixed a flag that caused them to be purged on load).
-- Added weapons/armor get a proper durability/stats block, and durability is editable for equipment that previously had none.
-- Queued item additions are shown in the Inventory list before saving.
-- Several crash fixes and clearer error messages.
+1. **启动**编辑器，**打开存档**——从列表中选择存档文件。
+2. 从顶部的下拉菜单中选择**角色**（每个队员都有独立的属性和背包）。
+3. 在各标签页中进行修改。
+4. 修改完后点击角色名旁边的**应用**，将数据应用到选择的角色。
+5. 点击**保存**，编辑器将修改写回 `.lsv` 存档文件。
+6. 在游戏中读取修改后的存档。
+
+### 各标签页功能
+
+| 标签页 | 功能 |
+|--------|------|
+| **属性** | 生命值、经验值、属性点/技能点/天赋点等 |
+| **能力** | 各能力的点数（如锻造、工艺、幸运、战斗/魔法学派等）。游戏内能力上限为 5 点，装备可在此基础上提升 |
+| **特质** | 性格特质值 |
+| **天赋** | 天赋列表 |
+| **背包** | 修改已有物品：稀有度、耐久度、**附魔**。右键附魔框可添加/删除/复制附魔 |
+| **添加物品** | 向角色背包中添加新物品 |
+
+### 添加物品
+
+1. 在**添加物品**标签页中，使用分类复选框和筛选框查找物品。
+2. 物品以**中文名**显示，方便识别。支持按 16 个分类筛选（武器/护甲/药水/技能书/卷轴/食物/箭矢/手雷等）。
+3. 点击物品将其添加到右侧列表；可设置**数量**，武器/护甲可选择**稀有度**。
+4. 点击**应用修改**——物品会出现在背包标签页中，显示为 *(待添加)* 行。
+5. 点击角色名旁边的**应用**，将数据应用到选择的角色。
+6. 点击**保存**，然后读取游戏。物品会出现在该角色的背包中。
+
+> 提示：添加物品前请确保选择了正确的角色——物品会添加到当前选中的角色身上。
+
+### 添加附魔
+
+在**背包**标签页中，选中一个已有物品，在"附魔"框右键选择**添加**，弹出附魔选择窗口。支持中文关键词搜索（如搜索"魅力"、"传奇"、"锻造"等）。选中后点击确定即可添加。仅支持装备相对应的附魔，例如：斧头类武器只能生效斧头类用的附魔，如果你添加了护符类的附魔上去在游戏不能正常显示（实际能否生效没测试过）。
 
 ---
 
-## Building from source
+## ✨ 本版本特性
 
-Open `D-OS Save Editor.sln` in Visual Studio (with the .NET desktop workload) and build in **Release**, or from a developer command prompt:
+### 全面汉化
+- 所有界面选项卡、按钮、标签均显示为简体中文，
+- **3137 条**物品中文名，背包和添加物品页均显示中文名
+- **1015 条**物品中文描述，选中物品时显示中文描述
 
-```
-nuget restore "D-OS Save Editor.sln"
-msbuild "D-OS Save Editor/D-OS Save Editor.csproj" /p:Configuration=Release
-```
+### 新增 814 个可添加物品
+- 从游戏数据文件中提取了 814 个有中文名的真实可拾取物品
+- 涵盖武器品质变体、护甲品质变体、宝石珍珠、金杯金勺、永恒属性药水等
+- 与原版里的 1084 个物品合计，添加物品页面共有 **1898 个**物品可选
 
-Releases are built and published automatically by the [`Release` GitHub Actions workflow](.github/workflows/release.yml) whenever a `vX.Y.Z` tag is pushed.
+### 分类修复
+- 原版里一些物品被错误分类，例如： `CON_Potion_*`（抗性药剂、隐形药水等）被错误归类为"食物"，现已修正为"药水"分类。
+- 现在背包和添加物品页使用统一的分类规则
+
+### 搜索功能
+- 现在可以用英文名和中文名搜索
+
+### 错误修复
+- **应用修改按钮被遮挡**：当添加不同的物品数量过多时按钮会被遮挡，现在已修复。
 
 ---
 
-## Contributors
 
-- [urbanpabs](https://github.com/urbanpabs) — maintainer of this fork (in-game item persistence, rarity/durability editing, crash fixes, release automation, docs)
 
-Contributions welcome — open an issue or pull request.
+## 📜 鸣谢
 
-## Credits
+- [AnthonyZJiang](https://github.com/AnthonyZJiang/D-OS-Save-Editor) —— 原始版本存档编辑器
+- [FlukiestEmperor](https://github.com/FlukiestEmperor)
+- [Greavox](https://github.com/Greavox)
+- [Norbyte](https://github.com/Norbyte) —— [LSLib / LSTools](https://github.com/Norbyte/lslib) 
+- [Se7enthSeal](https://github.com/Se7enthSeal/D-OS-Save-Editor) —— 制作了物品添加功能
+- [urbanpabs](https://github.com/urbanpabs/D-OS-Save-Editor) —— 在Se7enthSeal的分支上制作的游戏内物品持久化、稀有度/耐久度编辑、崩溃修复
 
-- [Norbyte](https://github.com/Norbyte) for [LSLib / LSTools](https://github.com/Norbyte/lslib).
-- [AnthonyZJiang](https://github.com/AnthonyZJiang) for the original save editor.
-- [Se7enthSeal](https://github.com/Se7enthSeal) for the fork this build is based on.
+---
+
+## 📄 许可证
+
+本项目基于 MIT 许可证开源，详情请查看 LICENSE 文件。

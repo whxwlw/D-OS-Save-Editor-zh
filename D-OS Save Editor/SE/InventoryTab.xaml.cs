@@ -51,10 +51,11 @@ namespace D_OS_Save_Editor
         {
             ItemsListBox.Items.Clear();
             foreach (var i in Player.Items)
-                ItemsListBox.Items.Add(new ListBoxItem
+             ItemsListBox.Items.Add(new ListBoxItem
                 {
                     Content = ItemChineseNames.Map.ContainsKey(i.StatsName) ? ItemChineseNames.Map[i.StatsName] : i.StatsName,
                     Tag = i.ItemSort,
+                    DataContext = i,
                     Foreground = _itemRarityColor[(int)i.ItemRarity]
                 });
 
@@ -237,7 +238,7 @@ namespace D_OS_Save_Editor
                     if (!(i.Tag is ItemSortType)) continue; // skip pending-add rows
                     if ((ItemSortType) i.Tag == ItemSortType.Item || (ItemSortType) i.Tag == ItemSortType.Unique ||
                         (ItemSortType) i.Tag == ItemSortType.Other)
-                        i.Visibility = ckb.IsChecked == true && !IsFilteredOutByText(i.Content as string) ? Visibility.Visible:Visibility.Collapsed;
+                        i.Visibility = ckb.IsChecked == true && !IsFilteredOutByText(i) ? Visibility.Visible:Visibility.Collapsed;
                 }
             }
             else
@@ -246,25 +247,27 @@ namespace D_OS_Save_Editor
                 {
                     if (!(i.Tag is ItemSortType)) continue; // skip pending-add rows
                     if ((ItemSortType)i.Tag == (ItemSortType)ckb.Tag)
-                        i.Visibility = ckb.IsChecked == true && !IsFilteredOutByText(i.Content as string) ? Visibility.Visible : Visibility.Collapsed;
+                        i.Visibility = ckb.IsChecked == true && !IsFilteredOutByText(i) ? Visibility.Visible : Visibility.Collapsed;
                 }
             }
         }
 
-        private bool IsFilteredOutByText(string itemName)
+        private bool IsFilteredOutByText(ListBoxItem item)
         {
-            var isFilteredOut = false;
-            itemName = itemName.ToLower();
             var searchTerms = SearchTextBox.Text.ToLower().Split(' ');
+            if (searchTerms.Length == 0 || string.IsNullOrEmpty(searchTerms[0]))
+                return false;
+
+            var displayName = (item.Content as string)?.ToLower() ?? "";
+            var statsName = (item.DataContext as Item)?.StatsName?.ToLower() ?? "";
+            var combined = displayName + " " + statsName;
+
             foreach (var s in searchTerms)
             {
-                if (itemName.Contains(s)) continue;
-
-                isFilteredOut = true;
-                break;
+                if (!combined.Contains(s))
+                    return true;
             }
-
-            return isFilteredOut;
+            return false;
         }
 
         private void CheckAllButton_OnClick(object sender, RoutedEventArgs e)
@@ -404,7 +407,7 @@ namespace D_OS_Save_Editor
         {
             switch (((MenuItem)sender).Header)
             {
-                case "Add":
+                case "添加":
                     if (ItemsListBox.SelectedIndex < 0 || ItemsListBox.SelectedIndex >= Player.Items.Length)
                     {
                         MessageBox.Show("Select an existing item in the list first, then add a modifier. " +
@@ -440,10 +443,10 @@ namespace D_OS_Save_Editor
                     if (dlg.DialogResult == true)
                         BoostsListBox.Items.Add(dlg.BoostText);
                     break;
-                case "Copy text":
+                case "复制文本":
                     Clipboard.SetText((string)BoostsListBox.SelectedValue);
                     break;
-                case "Delete":
+                case "删除":
                     BoostsListBox.Items.RemoveAt(BoostsListBox.SelectedIndex);
                     break;
             }
@@ -451,21 +454,7 @@ namespace D_OS_Save_Editor
 
         private void SearchTextBox_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            foreach (ListBoxItem i in ItemsListBox.Items)
-            {
-                var itemObj = i.DataContext as Item; if (itemObj == null) return;
-            var listBoxText = ((string)i.Content).ToLower() + " " + itemObj.StatsName.ToLower();
-                var searchTerms = SearchTextBox.Text.ToLower().Split(' ');
-                var visiblily = Visibility.Visible;
-                foreach (var s in searchTerms)
-                {
-                    if (listBoxText.Contains(s)) continue;
-
-                    visiblily = Visibility.Collapsed;
-                    break;
-                }
-                i.Visibility = visiblily;
-            }
+            UpdateForm();
         }
 
     }

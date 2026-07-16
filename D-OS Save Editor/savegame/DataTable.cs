@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Collections.Generic;
 namespace D_OS_Save_Editor
 {
     public class DataTable
@@ -1336,5 +1337,186 @@ namespace D_OS_Save_Editor
         return result;
     }
 
+        private static Dictionary<string, string> _boostDict;
+        private static Dictionary<string, string> BoostDict
+        {
+            get
+            {
+                if (_boostDict == null)
+                {
+                    _boostDict = new Dictionary<string, string>
+                    {
+                        {"Armor", "护甲"},{"Amulet", "护符"},{"Belt", "腰带"},{"Body", "身体"},
+                        {"Boots", "靴子"},{"Gloves", "手套"},{"Helmet", "头盔"},{"Ring", "戒指"},
+                        {"Shield", "盾牌"},{"Weapon", "武器"},{"Garment", "外衣"},
+                        {"Shoes", "靴子"},
+                        {"Boost", "加成"},{"Mod", "附魔"},{"Large", "大型"},{"Small", "小型"},
+                        {"DEX", "敏捷"},{"INT", "智力"},{"STR", "力量"},{"SPD", "速度"},
+                        {"CON", "体质"},{"PER", "感知"},
+                        {"Barter", "交易"},{"Charisma", "魅力"},{"Loremaster", "博学"},
+                        {"PoisonRes", "毒抗"},{"FireRes", "火抗"},{"WaterRes", "水抗"},
+                        {"EarthRes", "地抗"},{"AirRes", "电抗"},{"ShadowRes", "暗影抗性"},
+                        {"Poison", "毒素"},{"Fire", "火焰"},{"Water", "水系"},{"Air", "雷电"},
+                        {"Earth", "大地"},{"Shadow", "暗影"},{"Tenebrium", "黯金"},
+                        {"Critical", "暴击"},{"Damage", "伤害"},{"Accuracy", "命中"},
+                        {"Vitality", "生命"},{"Value", "价值"},
+                        {"Initiative", "先攻"},{"SightBoost", "视野"},{"HearingBoost", "听觉"},
+                        {"Strength", "力量"},{"Dexterity", "敏捷"},{"Intelligence", "智力"},
+                        {"Speed", "速度"},{"Perception", "感知"},{"Constitution", "体质"},
+                        {"Legendary", "传奇"},{"Epic", "史诗"},{"Rare", "稀有"},{"Unique", "独特"},
+                        {"Skill", "技能"},{"WeaponBoost", "武器加成"},
+                        {"Knife", "匕首"},{"Sword", "剑"},{"Spear", "矛"},{"Axe", "斧"},
+                        {"Bow", "弓"},{"Staff", "法杖"},{"Wand", "魔杖"},{"Club", "锤"},
+                        {"Crossbow", "弩"},{"2h", "双手"},
+                        {"WillPower", "意志"},{"Willpower", "意志"},
+                        {"Immunity", "免疫"},{"Resistance", "抗性"},
+                        {"Mute", "沉默"},{"Charm", "魅惑"},{"Stun", "眩晕"},{"Cripple", "致残"},
+                        {"Healing", "治疗"},{"Heal", "治疗"},{"HP", "生命"},{"AP", "行动点"},
+                        {"Magic", "魔法"},{"Physical", "物理"},{"Bleeding", "流血"},
+                        {"Haste", "加速"},{"Rage", "狂暴"},{"Regen", "回复"},{"Leech", "吸血"},
+                        {"Thorns", "荆棘"},{"Retribution", "反击"},{"Block", "格挡"},
+                        {"Dodge", "闪避"},{"Blocking", "格挡"},{"Reflect", "反射"},
+                        {"Reflection", "反射"},{"ReflectMelee", "近战反射"},
+                        {"ReflectAll", "全反射"},
+                        {"Late", "后期"},{"Early", "早期"},{"Mid", "中期"},{"Huge", "极效"},
+                        {"Giant", "巨型"},{"Medium", "中型"},{"Normal", "普通"},
+                        {"Super", "超级"},{"Smallest", "最小"},
+                        {"All", "全"},{"AllResistance", "全抗性"},{"AllStats", "全属性"},
+                        {"AllResist", "全抗"},{"Random", "随机"},
+                        {"Movement", "移动"},{"Dye", "染色"},{"Range", "射程"},
+                        {"Scope", "瞄准镜"},{"Projectile", "投射物"},{"Cone", "锥形"},
+                        {"Path", "路径"},{"Target", "目标"},
+                        {"WaterDamage", "水系伤害"},{"EarthDamage", "大地伤害"},
+                        {"FireDamage", "火焰伤害"},{"AirDamage", "雷电伤害"},
+                        {"PoisonDamage", "毒素伤害"},
+                        {"VitalityBoost", "生命加成"},{"ArmorBoost", "护甲加成"},
+                        {"ArmorDefense", "护甲防御"},{"DefenseValue", "防御值"},
+                        {"ArmorMastery", "护甲精通"},{"HelmetBoost", "头盔加成"},
+                        {"AmuletBoost", "护符加成"},
+                        {"Blackrock", "黯金"},
+                        {"TOOL", "工具"},{"WPN", "武器"},
+                        {"Sneaking", "潜行"},{"Pickpocket", "偷窃"},
+                        {"Pickpocketing", "偷窃"},{"Lockpick", "开锁"},
+                        {"Lockpicking", "开锁"},{"Repair", "修复"},
+                        {"Crafting", "工艺"},{"Blacksmithing", "锻造"},
+                        {"Luck", "幸运"},{"Leadership", "领导"},{"EXP", "经验"},
+                        {"Gold", "金币"},{"Level", "等级"},{"Durability", "耐久"},
+                        {"Melee", "近战"},{"Ranged", "远程"},
+                        {"Elemental", "元素"},{"SingleHanded", "单手"},
+                        {"TwoHanded", "双手"},{"DualWield", "双持"},
+                        {"Dagger", "匕首"},{"Wands", "魔杖"},{"XBow", "弩"},
+                        {"Cloth", "布甲"},{"Mail", "链甲"},{"Plate", "板甲"},
+                        {"Robe", "长袍"},{"Leather", "皮甲"},
+                        {"Hydrosophist", "水系"},{"Pyrokinetic", "火系"},
+                        {"Geomancer", "地系"},{"Aerothurge", "气系"},
+                        {"Witchcraft", "巫术"},{"ManAtArms", "战士"},
+                        {"ExpertMarksman", "游侠"},{"Scoundrel", "恶棍"},
+                        {"BodyBuilding", "体质"},
+                        {"Petrify", "石化"},{"Petrified", "石化"},
+                        {"Blind", "致盲"},{"Cursed", "诅咒"},{"Diseased", "患病"},
+                        {"Raged", "激怒"},{"Fear", "恐惧"},{"Freeze", "冻结"},
+                        {"Burn", "燃烧"},{"Chilled", "冻僵"},{"Slowed", "减速"},
+                        {"Knockdown", "击倒"},{"Crippled", "残废"},
+                        {"Contact", "接触"},{"PetrifyingTouch", "石化之触"},
+                        {"FreezeContact", "冻结接触"},{"BurnContact", "燃烧接触"},
+                        {"PoisonContact", "毒素接触"},{"StunContact", "眩晕接触"},
+                        {"ChillContact", "冻僵接触"},
+                        {"BurnImmunity", "火免"},{"FreezeImmunity", "冰免"},
+                        {"StunImmunity", "眩晕免疫"},{"PoisonImmunity", "毒免"},
+                        {"PetrifiedImmunity", "石化免疫"},{"FearImmunity", "恐惧免疫"},
+                        {"MuteImmunity", "沉默免疫"},{"CrippledImmunity", "残废免疫"},
+                        {"SlowedImmunity", "减速免疫"},{"KnockdownImmunity", "击倒免疫"},
+                        {"BlindImmunity", "致盲免疫"},
+                        {"BleedingImmunity", "流血免疫"},
+                        {"CursedImmunityRobe", "诅咒免疫长袍"},
+                        {"MuteImmunityRobe", "沉默免疫长袍"},
+                        {"BleedingImmunityLeather", "流血免疫皮甲"},
+                        {"PoisonImmunityLeather", "毒免皮甲"},
+                        {"PoisonImmunityPlate", "毒免板甲"},
+                        {"PoisonImmunityMail", "毒免链甲"},
+                        {"BurnImmunityMail", "火免链甲"},
+                        {"BurnImmunityPlate", "火免板甲"},
+                        {"FreezeImmunityMail", "冰免链甲"},
+                        {"FreezeImmunityPlate", "冰免板甲"},
+                        {"StunImmunityMail", "眩晕免疫链甲"},
+                        {"StunImmunityPlate", "眩晕免疫板甲"},
+                        {"PetrifiedImmunityMail", "石化免疫链甲"},
+                        {"PetrifiedImmunityPlate", "石化免疫板甲"},
+                        {"FearImmunityMail", "恐惧免疫链甲"},
+                        {"FearLarge", "大型恐惧"},
+                        {"KnockdownImmunityMail", "击倒免疫链甲"},
+                        {"KnockdownImmunityPlate", "击倒免疫板甲"},
+                        {"CrippledImmunityMail", "残废免疫链甲"},
+                        {"CrippledImmunityBoots", "残废免疫靴子"},
+                        {"CrippledImmunityPlate", "残废免疫板甲"},
+                        {"LargeEarly", "大型早期"},{"LargeLate", "大型后期"},
+                        {"LargeMid", "大型中期"},{"LargeSingleHanded", "大型单手"},
+                        {"LateMail", "后期链甲"},{"LatePlate", "后期板甲"},
+                        {"ModKnife", "匕首附魔"},{"ModSword", "剑附魔"},
+                        {"ModAxe", "斧附魔"},{"ModClub", "锤附魔"},
+                        {"ModBow", "弓附魔"},{"ModXBow", "弩附魔"},
+                        {"ModSpear", "矛附魔"},{"ModWand", "魔杖附魔"},
+                        {"ModStaff", "法杖附魔"},{"ModCrossbow", "弩附魔"},
+                        {"BowMod", "弓附魔"},{"XBowMod", "弩附魔"},
+                        {"ModLarge", "大型附魔"},{"ModSmall", "小型附魔"},
+                        {"ModHuge", "巨型附魔"},{"ModNormal", "普通附魔"},
+                        {"ModLate", "后期附魔"},
+                        {"ModAmulet", "护符附魔"},{"ModRing", "戒指附魔"},
+                        {"ModRingLarge", "大型戒指附魔"},{"ModHelmet", "头盔附魔"},
+                        {"ModCombo", "复合附魔"},
+                        {"ModLargeMail", "大型链甲附魔"},{"ModLargePlate", "大型板甲附魔"},
+                        {"ModStaffLarge", "大型法杖附魔"},{"ModRobe", "长袍附魔"},
+                        {"ModLeather", "皮甲附魔"},{"ModMail", "链甲附魔"},
+                        {"ModPlate", "板甲附魔"},{"ClothMod", "布甲附魔"},
+                        {"WaterResistance", "水抗"},{"FireResistance", "火抗"},
+                        {"AirResistance", "电抗"},{"EarthResistance", "地抗"},
+                        {"ShadowResistance", "暗抗"},
+                        {"Fortify", "强化"},{"Fortification", "城塞"},
+                        {"Resurrect", "复活"},{"Immolate", "献祭"},
+                        {"PurifyingFire", "洁净之火"},{"RegenerateStart", "再生"},
+                        {"CureWoundsKnight", "骑士疗伤"},{"Unbreakable", "不破"},
+                        {"TargetedPerception", "目标感知"},
+                        {"ElementalTortoise", "元素龟甲"},
+                        {"VampiricTouchRing", "吸血鬼之触戒指"},
+                        {"VampiricTouchRingLate", "后期吸血鬼之触戒指"},
+                        {"BlitzBoltStartRing", "闪电箭戒指"},
+                        {"BlitzBoltStartRingLate", "后期闪电箭戒指"},
+                        {"FlareStartRing", "闪光戒指"},
+                        {"FlareStartRingLate", "后期闪光戒指"},
+                        {"WinterbreathMedium", "中型冬日气息"},
+                        {"Inhuman", "非人"},{"TormentedSoul", "受折磨之魂"},
+                        {"Triad", "三合"},{"Candy", "糖果"},{"Petrol", "石油"},
+                        {"Firefly", "萤火虫"},{"SnowBoots", "雪地靴"},
+                        {"FreezeContactMail", "冻结接触链甲"},
+                        {"FreezeContactPlate", "冻结接触板甲"},
+                        {"BurnContactMail", "燃烧接触链甲"},
+                        {"BurnContactPlate", "燃烧接触板甲"},
+                        {"PoisonContactLeather", "毒素接触皮甲"},
+                        {"StunContactMail", "眩晕接触链甲"},
+                        {"StunContactPlate", "眩晕接触板甲"},
+                        {"Blue", "蓝色"},{"Red", "红色"},{"Green", "绿色"},
+                        {"White", "白色"},{"Black", "黑色"},{"Yellow", "黄色"},
+                        {"Purple", "紫色"},{"Undead", "亡灵"},
+                        {"Telekinesis", "念力"},{"Summon", "召唤"},
+                        {"Teleportation", "传送"},{"Tornado", "龙卷风"},
+                        {"Farsight", "远眺术"},{"ActionPoint", "行动点"},
+                        {"ActionPoints", "行动点"},{"APCost", "行动消耗"},
+                    };
+                }
+                return _boostDict;
+            }
+        }
+
+        public static string TranslateBoostName(string boostName)
+        {
+            if (string.IsNullOrEmpty(boostName)) return boostName;
+            var result = boostName;
+            foreach (var kvp in BoostDict)
+            {
+                result = result.Replace(kvp.Key, kvp.Value);
+            }
+            result = result.Replace("__", "·").Replace("  ", "").Replace("_", "");
+            return result;
+        }
     }
 }

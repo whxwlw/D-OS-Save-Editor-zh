@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <LangVersion>latest</LangVersion>
+    <GenerateResourceUsePreserialized>true</GenerateResourceUsePreserialized>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -48,11 +50,15 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <GenerateResourceUsePreserialized>true</GenerateResourceUsePreserialized>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LSLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lslib\LSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Extensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Resources.Extensions.6.0.0\lib\net461\System.Resources.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\winapicp.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>

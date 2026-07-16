@@ -19,7 +19,8 @@ namespace D_OS_Save_Editor
             {
                 BoostListBox.Items.Add(new ListBoxItem
                 {
-                    Content = s
+                    Tag = s,
+                    Content = DataTable.TranslateBoostName(s)
                 });
             }
 
@@ -28,7 +29,8 @@ namespace D_OS_Save_Editor
                 if (DataTable.GenerationBoosts.Contains(s)) continue;
                 BoostListBox.Items.Add(new ListBoxItem
                 {
-                    Content = s
+                    Tag = s,
+                    Content = DataTable.TranslateBoostName(s)
                 });
             }
 
@@ -57,7 +59,7 @@ namespace D_OS_Save_Editor
 
         private void OKButton_OnClick(object sender, RoutedEventArgs e)
         {
-            BoostText = BoostTextBox.Text;
+            BoostText = ((ListBoxItem)BoostListBox.SelectedItem)?.Tag as string ?? BoostTextBox.Text;
             DialogResult = true;
         }
     }

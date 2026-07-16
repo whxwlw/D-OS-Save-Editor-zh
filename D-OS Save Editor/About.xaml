@@ -18,8 +18,12 @@
             <TextBlock Text="许可证信息请查看开源网站上的 LICENSE 文件。" FontSize="10" Margin="0,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,20,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="开源地址：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="原版本开源地址：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/tmxkn1/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="30,0,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="此修改版本地址：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/whxwlw/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,0,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBlock Text="使用与讨论：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -27,11 +31,17 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,20,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBlock Text="鸣谢："/>
+            <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/AnthonyZJiang/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">AnthonyZJiang（原作者）</Hyperlink></TextBlock>
+            <TextBlock Text=","></TextBlock>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/FlukiestEmperor" RequestNavigate="Hyperlink_RequestNavigate">FlukiestEmperor</Hyperlink></TextBlock>
             <TextBlock Text=","></TextBlock>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/Greavox" RequestNavigate="Hyperlink_RequestNavigate">Greavox</Hyperlink></TextBlock>
             <TextBlock Text=","></TextBlock>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/Norbyte/lslib" RequestNavigate="Hyperlink_RequestNavigate">Norbyte</Hyperlink></TextBlock>
+            <TextBlock Text=","></TextBlock>
+            <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/Se7enthSeal/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">Se7enthSeal</Hyperlink></TextBlock>
+            <TextBlock Text=","></TextBlock>
+            <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/urbanpabs/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">urbanpabs</Hyperlink></TextBlock>
         </StackPanel>
     <Button Content="确定" Width="70" Margin="0,20,20,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCancel="True"/>
     </StackPanel>
