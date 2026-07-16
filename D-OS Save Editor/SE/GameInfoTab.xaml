@@ -19,7 +19,7 @@
         </Style>
     </UserControl.Resources>
     <WrapPanel>
-        <GroupBox Header="Info">
+        <GroupBox Header="信息">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -32,11 +32,11 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Difficulty:" />
-                <TextBlock Text="SaveGame type:" Grid.Row="1"/>
-                <TextBlock Text="Seed:" Grid.Row="2"/>
-                <TextBlock Text="Map:" Grid.Row="3"/>
-                <TextBlock Text="Recording date:" Grid.Row="4"/>
+                <TextBlock Text="难度：" />
+                <TextBlock Text="存档类型：" Grid.Row="1"/>
+                <TextBlock Text="种子：" Grid.Row="2"/>
+                <TextBlock Text="地图：" Grid.Row="3"/>
+                <TextBlock Text="记录日期：" Grid.Row="4"/>
                 <TextBlock x:Name="DifficultyTextBlock" Grid.Column="1"/>
                 <TextBlock x:Name="SaveGameTypeTextBlock" Grid.Row="1" Grid.Column="1"/>
                 <TextBlock x:Name="SeedTextBlock" Grid.Row="2" Grid.Column="1"/>
@@ -44,10 +44,10 @@
                 <TextBlock x:Name="SaveTimeTextBlock" Grid.Row="4" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Game Version">
+        <GroupBox Header="游戏版本">
             <ListBox x:Name="GameVersionListBox" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Left" MinHeight="200" Height="Auto" VerticalAlignment="Top" Width="133" IsEnabled="False" />
         </GroupBox>
-        <GroupBox Header="Mods">
+        <GroupBox Header="模组">
             <ListBox x:Name="ModsListBox" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Left" MinHeight="200" Height="Auto" VerticalAlignment="Top" Width="166" IsEnabled="False" />
         </GroupBox>
     </WrapPanel>

@@ -44,11 +44,11 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Filter:"/>
+            <TextBlock Text="筛选："/>
             <TextBox Grid.Column="1" x:Name="SearchTextBox" Uid="SearchText" Margin="10,0,20,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="Auto" TextChanged="SearchTextBox_OnTextChanged"/>
-            <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="Use space to separate" FontSize="10" FontStyle="Italic"/>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="用空格分隔多个关键词" FontSize="10" FontStyle="Italic"/>
         </Grid>
-        <ListBox x:Name="ItemsListBox" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Left" MinHeight="430" Height="Auto" Margin="10,0,20,10" VerticalAlignment="Top" Width="239">
+        <ListBox x:Name="ItemsListBox" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10,0,20,10" Width="239">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">
                     <EventSetter Event="PreviewMouseLeftButtonUp" Handler="ListBoxItem_Click"/>
@@ -59,19 +59,19 @@
                 <DataTemplate>
 
                     <TextBlock Grid.Column="0" ToolTipService.InitialShowDelay = '50'
-                        Text="{Binding Name}"
+                        Text="{Binding DisplayName}"
                         TextWrapping="NoWrap"
                         TextTrimming="CharacterEllipsis"
                         VerticalAlignment="Center"
-                        ToolTip="{Binding Description}"/>
+                        ToolTip="{Binding ChineseDescription}"/>
 
                 </DataTemplate>
             </ListBox.ItemTemplate>
 
         </ListBox>
         <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,10">
-            <Button Content="Check all" Margin="0,0,20,0" Padding="5,2" Width="80" Click="CheckAllButton_OnClick" VerticalAlignment="Top"/>
-            <Button Content="Uncheck all" Padding="5,2" Width="80" Click="UncheckAllButtonBase_OnClick" VerticalAlignment="Top"/>
+            <Button Content="全选" Margin="0,0,20,0" Padding="5,2" Width="80" Click="CheckAllButton_OnClick" VerticalAlignment="Top"/>
+            <Button Content="取消全选" Padding="5,2" Width="80" Click="UncheckAllButtonBase_OnClick" VerticalAlignment="Top"/>
         </StackPanel>
         <WrapPanel x:Name="ItemSortCheck" Grid.Row="1" Grid.Column="1" Margin="0,0,0,20">
             <WrapPanel.Resources>
@@ -81,44 +81,52 @@
                     <EventSetter Event="Click" Handler="CheckboxEventSetter_OnClick"/>
                 </Style>
             </WrapPanel.Resources>
-            <CheckBox x:Name="ShowGoldCheckBox" Content="Gold" Tag="{x:Static local:ItemSortType.Gold}"/>
-            <CheckBox x:Name="ShowArmorCheckBox" Content="Armor" Tag="{x:Static local:ItemSortType.Armor}"/>
-            <CheckBox x:Name="ShowWeaponCheckBox" Content="Weapon" Tag="{x:Static local:ItemSortType.Weapon}"/>
-            <CheckBox x:Name="ShowScrollCheckBox" Content="Scroll" Tag="{x:Static local:ItemSortType.Scroll}"/>
-            <CheckBox x:Name="ShowPotionCheckBox" Content="Potion" Tag="{x:Static local:ItemSortType.Potion}"/>
-            <CheckBox x:Name="ShowFurnitureCheckBox" Content="Furniture" Tag="{x:Static local:ItemSortType.Furniture}"/>
-            <CheckBox x:Name="ShowSkillbookCheckBox" Content="Skill book" Tag="{x:Static local:ItemSortType.Skillbook}"/>
-            <CheckBox x:Name="ShowGrenadeCheckBox" Content="Grenade" Tag="{x:Static local:ItemSortType.Granade}"/>
-            <CheckBox x:Name="ShowFoodCheckBox" Content="Food" Tag="{x:Static local:ItemSortType.Food}"/>
-            <CheckBox x:Name="ShowArrowCheckBox" Content="Arrow" Tag="{x:Static local:ItemSortType.Arrow}"/>
-            <CheckBox x:Name="ShowBookCheckBox" Content="Book" Tag="{x:Static local:ItemSortType.Book}"/>
-            <CheckBox x:Name="ShowLootCheckBox" Content="Loot" Tag="{x:Static local:ItemSortType.Loot}"/>
-            <CheckBox x:Name="ShowQuestCheckBox" Content="Quest" Tag="{x:Static local:ItemSortType.Quest}"/>
-            <CheckBox x:Name="ShowToolCheckBox" Content="Tool" Tag="{x:Static local:ItemSortType.Tool}"/>
-            <CheckBox x:Name="ShowKeyCheckBox" Content="Key" Tag="{x:Static local:ItemSortType.Key}"/>
-            <CheckBox x:Name="ShowOtherCheckBox" Content="Other" Tag="{x:Static local:ItemSortType.Other}"/>
+            <CheckBox x:Name="ShowGoldCheckBox" Content="金币" Tag="{x:Static local:ItemSortType.Gold}"/>
+            <CheckBox x:Name="ShowArmorCheckBox" Content="护甲" Tag="{x:Static local:ItemSortType.Armor}"/>
+            <CheckBox x:Name="ShowWeaponCheckBox" Content="武器" Tag="{x:Static local:ItemSortType.Weapon}"/>
+            <CheckBox x:Name="ShowScrollCheckBox" Content="卷轴" Tag="{x:Static local:ItemSortType.Scroll}"/>
+            <CheckBox x:Name="ShowPotionCheckBox" Content="药水" Tag="{x:Static local:ItemSortType.Potion}"/>
+            <CheckBox x:Name="ShowFurnitureCheckBox" Content="家具" Tag="{x:Static local:ItemSortType.Furniture}"/>
+            <CheckBox x:Name="ShowSkillbookCheckBox" Content="技能书" Tag="{x:Static local:ItemSortType.Skillbook}"/>
+            <CheckBox x:Name="ShowGrenadeCheckBox" Content="手雷" Tag="{x:Static local:ItemSortType.Granade}"/>
+            <CheckBox x:Name="ShowFoodCheckBox" Content="食物" Tag="{x:Static local:ItemSortType.Food}"/>
+            <CheckBox x:Name="ShowArrowCheckBox" Content="箭矢" Tag="{x:Static local:ItemSortType.Arrow}"/>
+            <CheckBox x:Name="ShowBookCheckBox" Content="书籍" Tag="{x:Static local:ItemSortType.Book}"/>
+            <CheckBox x:Name="ShowLootCheckBox" Content="战利品" Tag="{x:Static local:ItemSortType.Loot}"/>
+            <CheckBox x:Name="ShowQuestCheckBox" Content="任务" Tag="{x:Static local:ItemSortType.Quest}"/>
+            <CheckBox x:Name="ShowToolCheckBox" Content="工具" Tag="{x:Static local:ItemSortType.Tool}"/>
+            <CheckBox x:Name="ShowKeyCheckBox" Content="钥匙" Tag="{x:Static local:ItemSortType.Key}"/>
+            <CheckBox x:Name="ShowOtherCheckBox" Content="其他" Tag="{x:Static local:ItemSortType.Other}"/>
         </WrapPanel>
 
         <Grid Grid.Row="1"
-          Grid.Column="1"
-          Margin="0,80,0,0"
-          IsSharedSizeScope="True"
-          HorizontalAlignment="Stretch"
-              Width="500">
+                Grid.Column="1"
+                Margin="0,80,0,0"
+                Width="500"
+                Height="420"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                IsSharedSizeScope="True">
 
                 <Grid.RowDefinitions>
+
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+
+                    <RowDefinition Height="330"/>
+
+                    <RowDefinition Height="45"/>
+
                 </Grid.RowDefinitions>
 
 
                 <!-- List -->
                 <ListBox Grid.Row="1"
-                         x:Name="SelectedItemsListbox"
-                         MinHeight="350"
-                         BorderThickness="1"
-                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                         Width="490">
+                        x:Name="SelectedItemsListbox"
+                        Width="490"
+                        Height="330"
+                        BorderThickness="1"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                     <ListBox.ItemTemplate>
                             <DataTemplate>
@@ -129,7 +137,7 @@
                                     </Grid.ColumnDefinitions>
 
                             <TextBlock Grid.Column="0"
-                                       Text="{Binding Name}"
+                                       Text="{Binding DisplayName}"
                                        TextWrapping="NoWrap"
                                        TextTrimming="CharacterEllipsis"
                                        VerticalAlignment="Center"/>
@@ -142,7 +150,7 @@
 
                                     <ComboBox Width="90" Margin="0,0,8,0"
                                               VerticalAlignment="Center"
-                                              ToolTip="Rarity of the added item"
+                                              ToolTip="添加物品的稀有度"
                                               ItemsSource="{x:Static local:AddItemTab.RarityValues}"
                                               SelectedItem="{Binding ItemRarity, Mode=TwoWay}"/>
                                     <Button Content="X" Width="25" Height="25" Click="ZeroButton_Click"/>
@@ -162,7 +170,7 @@
                                     <RepeatButton Content="+" Width="25" Height="25" Interval="20"           
                                                         Delay="250" Click="IncrementButton_Click"/>
 
-                                    <Button Content="Max" Width="30" Height="25" Click="MaxButton_Click"/>
+                                    <Button Content="最大" Width="30" Height="25" Click="MaxButton_Click"/>
                                 
                                 </StackPanel>
                             </Grid>
@@ -170,9 +178,35 @@
                         </ListBox.ItemTemplate>
 
                 </ListBox>
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,8,0,0">
+
+                    <Button x:Name="ApplyChangesButton"
+                            Width="120"
+                            Height="34"
+                            Content="应用修改"
+                            Click="ApplyChangesButton_OnClick"/>
+
+                </StackPanel>
 
         </Grid>
+        <Border Grid.Row="3"
+                Grid.Column="1"
+                Margin="0,10,0,0"
+                BorderThickness="1,0,0,0"
+                BorderBrush="#DDDDDD"
+                Padding="0,10,0,0">
 
-        <Button Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Content="Apply changes" Padding="10,2" VerticalAlignment="Center" Margin="314,0,0,0" Click="ApplyChangesButton_OnClick" Width="125"/>
+            <DockPanel LastChildFill="False">
+                <TextBlock DockPanel.Dock="Left"
+                           VerticalAlignment="Center"
+                           Foreground="Gray"
+                           Text="单击左侧物品即可加入列表"/>
+
+            </DockPanel>
+        </Border>
+
     </Grid>
 </UserControl>

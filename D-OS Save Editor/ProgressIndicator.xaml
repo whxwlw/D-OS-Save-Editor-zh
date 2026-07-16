@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Progress" Height="130" Width="300"
+        Title="进度" Height="130" Width="300"
         WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
     <Grid Margin="20">
         <Grid.RowDefinitions><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>

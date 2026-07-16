@@ -122,6 +122,8 @@
       <DependentUpon>InventoryTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="savegame\Item.cs" />
+    <Compile Include="savegame\ItemChineseNames.cs" />
+    <Compile Include="savegame\ChineseDescriptions.cs" />
     <Compile Include="savegame\LsxParser.cs" />
     <Compile Include="savegame\Player.cs" />
     <Compile Include="Properties\Annotations.cs" />
@@ -256,6 +258,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ItemTemplates\*.lsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>

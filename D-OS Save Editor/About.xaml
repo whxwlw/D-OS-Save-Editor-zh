@@ -5,34 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:D_OS_Save_Editor"
         mc:Ignorable="d"
-        Title="About" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner"
+        Title="关于" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner"
         UseLayoutRounding="True">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Vertical" Margin="30,20,30,0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="D-OS Save Editor" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock Text="D-OS 存档编辑器" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
             <TextBlock Text="{Binding Path=(local:MainWindow.Version)}" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical" Margin="30,20,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="Copyright Anthony Jiang, 2018." HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBlock Text="MIT License" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBlock Text="For license information, check LICENSE file at the open source website." FontSize="10" Margin="0,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="版权所有 Anthony Jiang，2018。" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="MIT 许可证" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="许可证信息请查看开源网站上的 LICENSE 文件。" FontSize="10" Margin="0,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,20,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="Open source at" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="开源地址：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/tmxkn1/D-OS-Save-Editor" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,0,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="Use and discussions:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="使用与讨论：" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="http://larian.com/forums/ubbthreads.php?ubb=showflat&amp;Number=644516#Post644516r" RequestNavigate="Hyperlink_RequestNavigate">Larian forum</Hyperlink></TextBlock>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="30,20,30,0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="Credit:"/>
+            <TextBlock Text="鸣谢："/>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/FlukiestEmperor" RequestNavigate="Hyperlink_RequestNavigate">FlukiestEmperor</Hyperlink></TextBlock>
             <TextBlock Text=","></TextBlock>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/Greavox" RequestNavigate="Hyperlink_RequestNavigate">Greavox</Hyperlink></TextBlock>
             <TextBlock Text=","></TextBlock>
             <TextBlock Margin="5,0,0,0"><Hyperlink NavigateUri="https://github.com/Norbyte/lslib" RequestNavigate="Hyperlink_RequestNavigate">Norbyte</Hyperlink></TextBlock>
         </StackPanel>
-    <Button Content="OK" Width="70" Margin="0,20,20,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCancel="True"/>
+    <Button Content="确定" Width="70" Margin="0,20,20,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCancel="True"/>
     </StackPanel>
 </Window>

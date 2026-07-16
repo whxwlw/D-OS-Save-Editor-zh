@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:D_OS_Save_Editor"
         mc:Ignorable="d"
         WindowStyle="ToolWindow" UseLayoutRounding="True" 
-        Title="Error" SizeToContent="WidthAndHeight" Height="367.639" Width="514.335" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="错误" SizeToContent="WidthAndHeight" Height="367.639" Width="514.335" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
         <local:SystemIconConverter x:Key="iconConverter"/>
         <Style TargetType="Button">
@@ -28,14 +28,14 @@
         <Image Margin="20,20,20,0" Stretch="Uniform" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Source="{Binding Converter={StaticResource iconConverter}, ConverterParameter=Error}" RenderTransformOrigin="0.549,4.213"/>
         <StackPanel Grid.Column="1">
             <TextBlock Text="{Binding Message}" Margin="20,20,20,0" TextWrapping="Wrap" MaxWidth="401"/>
-            <TextBlock Text="If you would like to help, please click the &quot;Report&quot; button." Margin="20,0,20,0" TextWrapping="Wrap" MaxWidth="401"/>
-            <TextBlock Text="By clicking the &quot;Report&quot; button, a website will be open. The texts you will need to submit will be copied automatically. You only need to paste them in the Description box." Margin="20,5,20,10" TextWrapping="Wrap" MaxWidth="401" FontStyle="Italic"></TextBlock>
+            <TextBlock Text="如果您愿意帮助改进，请点击「报告」按钮。" Margin="20,0,20,0" TextWrapping="Wrap" MaxWidth="401"/>
+            <TextBlock Text="点击「报告」按钮后，将打开一个网站。您需要提交的文本将自动复制。您只需将其粘贴到描述框中即可。" Margin="20,5,20,10" TextWrapping="Wrap" MaxWidth="401" FontStyle="Italic"></TextBlock>
         </StackPanel>
 
         <TextBox Grid.Column="1" Grid.Row="1" Focusable="False" Margin="20,0,20,0" MaxWidth="400" MaxHeight="156" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="{Binding ErrorMessage}" Background="#FFE2E2E2"/>
         <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right">
-            <Button Content="Report" Click="ReportButtonClicked"/>
-            <Button Content="Close" IsCancel="True"/>
+            <Button Content="报告" Click="ReportButtonClicked"/>
+            <Button Content="关闭" IsCancel="True"/>
         </StackPanel>
     </Grid>
 </Window>

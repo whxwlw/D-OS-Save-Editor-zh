@@ -72,6 +72,10 @@ namespace D_OS_Save_Editor
         /// Xml node name: Description of the item (Xml attribute id: Description)
         /// </summary>
         public string Description { get; set; }
+        /// <summary>
+        /// ContentUID handle for Description (used for Chinese translation lookup)
+        /// </summary>
+        public string DescriptionHandle { get; set; }
 
         /// <summary>
         /// Xml node name: Indicates if the item is a key or not.
@@ -542,8 +546,23 @@ namespace D_OS_Save_Editor
         protected void OnPropertyChanged(string name)
         => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         public string Name { get; set; }
+        /// <summary>
+        /// Chinese display name from ItemChineseNames, falls back to Name
+        /// </summary>
+        /// <summary>
+        /// Chinese description when available
+        /// </summary>
+        public string ChineseDescription => 
+            (!string.IsNullOrEmpty(Stats) && ChineseDescriptions.Map.TryGetValue(Stats, out var cd)) ? cd : Description;
+
+        public string DisplayName => 
+            (!string.IsNullOrEmpty(Stats) && ItemChineseNames.Map.TryGetValue(Stats, out var cn)) ? cn : Name;
         public string Stats { get; set; }
         public string Description { get; set; }
+        /// <summary>
+        /// ContentUID handle for Description (used for Chinese translation lookup)
+        /// </summary>
+        public string DescriptionHandle { get; set; }
         public string TemplateKey { get; set; }
         public string MaxStack { get; set; }
         public ItemSortType ItemSort { get; set; }

@@ -7,8 +7,8 @@ namespace D_OS_Save_Editor
     /// </summary>
     public partial class GameInfoTab
     {
-        private readonly string[] _difficultyName = { "Story", "Classic", "Tactician", "Honour" };
-        private readonly string[] _gameSavetypeName = { "Manual", "QuickSave", "AutoSave", "Honour Save" };
+        private readonly string[] _difficultyName = { "探索模式", "经典模式", "策略模式", "荣誉模式" };
+        private readonly string[] _gameSavetypeName = { "手动存档", "快速存档", "自动存档", "荣誉模式存档" };
 
         private Meta _meta;
 

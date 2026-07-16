@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="D-OS Save Editor: Select a save" Height="615" Width="674" SizeToContent="Height" MinWidth="625" MinHeight="615" MaxHeight="700" ResizeMode="CanMinimize"
+        Title="D-OS 存档编辑器：选择存档" Height="615" Width="674" SizeToContent="Height" MinWidth="625" MinHeight="615" MaxHeight="700" ResizeMode="CanMinimize"
         WindowStartupLocation="CenterScreen" UseLayoutRounding="True">
     <Window.Resources>
         <Style TargetType="Button">
@@ -107,7 +107,7 @@
                 <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0">
                     <TextBlock x:Name="UpdateTextBox" Text="" MaxWidth="484" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" TextTrimming="CharacterEllipsis"/>
-                    <TextBlock VerticalAlignment="Center"><Hyperlink Tag="site" Click="Hyperlink_OnRequestNavigate">Update now</Hyperlink></TextBlock>
+                    <TextBlock VerticalAlignment="Center"><Hyperlink Tag="site" Click="Hyperlink_OnRequestNavigate">立即更新</Hyperlink></TextBlock>
                     <TextBlock VerticalAlignment="Center" Text="."/>
                 </StackPanel>
                 <Button Grid.Column="1" x:Name="DismissButton" Style="{StaticResource DismissButtonStyle}" Margin="10,5,10,5" HorizontalAlignment="Right" Click="DismissButton_OnClick">
@@ -131,7 +131,7 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" >
-                    <TextBlock Text="Savegames Patch " Margin="0,0,0,5" VerticalAlignment="Center"/>
+                    <TextBlock Text="存档目录 " Margin="0,0,0,5" VerticalAlignment="Center"/>
                     <TextBlock Text ="(Larian Studios\" FontSize="10" VerticalAlignment="Center"/>
                     <TextBlock Text ="game_version " FontSize="10" VerticalAlignment="Center" FontStyle="Italic"/>
                     <TextBlock Text ="\PlayerProfiles\" FontSize="10" VerticalAlignment="Center"/>
@@ -142,7 +142,7 @@
                 <Button x:Name="BrowseButton" Grid.Row="1" Grid.Column="1" Style="{StaticResource BrowseImageButtonStyle}" Width="20" Padding="0" Click="BrowseButton_OnClick"/>
             </Grid>
             <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,20,0,0">
-                <TextBlock Text="Game edition:" Margin="0,0,10,0"/>
+                <TextBlock Text="游戏版本：" Margin="0,0,10,0"/>
                 <TextBlock x:Name="GameEditionTextBlock" Foreground="#FFC70202"/>
             </StackPanel>
             <Grid Grid.Row="3">
@@ -156,8 +156,8 @@
                 </Grid.ColumnDefinitions>
                 <ListBox Grid.Row="0" x:Name="SavegameListBox" Margin="0,10,10,0" SelectionChanged="SavegameListBox_OnSelectionChanged" Height="400" MaxWidth="240" Width="240" MouseDoubleClick="LoadButton_OnClick"/>
                 <Button x:Name="RefreshButton" Style="{StaticResource RefreshImageButtonStyle}" Grid.Row="1" Width="20" Height="20" HorizontalAlignment="Right" Margin="0, 5,10,0" Padding="0" VerticalAlignment="Top" Click="RefreshButton_OnClick"/>
-                <Button Content="About" Grid.Row="1" HorizontalAlignment="Left" Margin="35,30,0,0" Click="AboutButton_OnClick"/>
-                <Button Style="{StaticResource BugReportButtonStyle}" Grid.Row="1" Width="20" Height="18" HorizontalAlignment="Left" Margin="0,30,20,0" Padding="0" VerticalAlignment="Top" Click="BugReportButton_OnClick" ToolTip="Bug report"/>
+                <Button Content="关于" Grid.Row="1" HorizontalAlignment="Left" Margin="35,30,0,0" Click="AboutButton_OnClick"/>
+                <Button Style="{StaticResource BugReportButtonStyle}" Grid.Row="1" Width="20" Height="18" HorizontalAlignment="Left" Margin="0,30,20,0" Padding="0" VerticalAlignment="Top" Click="BugReportButton_OnClick" ToolTip="错误报告"/>
                 <Grid Grid.Column="1" Grid.RowSpan="3"  Margin="20,20,0,0" >
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -183,30 +183,30 @@
                     <Rectangle Grid.Row="1" Grid.Column="3" Margin="0,3" Stroke="Black" StrokeThickness="0.5"/>
                     <Rectangle Grid.Row="2" Grid.Column="3" Margin="0,3" Stroke="Black" StrokeThickness="0.5"/>
                     <Rectangle Grid.Row="3" Grid.Column="3" Margin="0,3" Stroke="Black" StrokeThickness="0.5"/>
-                    <TextBlock Grid.Row="1" Text="Date:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock Grid.Row="1" Text="日期：" VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <TextBlock Grid.Row="1" Grid.Column="1" Width="100" Margin="5" Text="{Binding Meta.SavegameDateString}"/>
-                    <TextBlock Grid.Row="2" Text="Time:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock Grid.Row="2" Text="时间：" VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <TextBlock Grid.Row="2" Grid.Column="1" Width="100" Margin="5" Text="{Binding Meta.SavegameTimeString}"/>
-                    <TextBlock Grid.Row="3" Text="Map:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock Grid.Row="3" Text="地图：" VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <TextBlock Grid.Row="3" Grid.Column="1" Width="100" Margin="5" Text="{Binding Meta.Level}" ToolTip="{Binding Meta.Level}"/>
-                    <TextBlock Grid.Row="3" Grid.Column="2" Text="Difficulty:" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="难度：" VerticalAlignment="Center" Margin="10,0,10,0"/>
                     <TextBlock Grid.Row="3" Grid.Column="3" Width="100" Margin="5" Text="{Binding Meta.DifficultyString}"/>
-                    <TextBlock Grid.Row="1" Grid.Column="2" Text="Version:" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="版本：" VerticalAlignment="Center" Margin="10,0,10,0"/>
                     <TextBlock Grid.Row="1" Grid.Column="3" Width="100" Margin="5" Text="{Binding Meta.LastGameVersion}">
                         <TextBlock.Style>
                             <Style TargetType="TextBlock">
                                 <Setter Property="Foreground" Value="Black"/>
-                                <Setter Property="ToolTip" Value="Game version is supported!"/>
+                                <Setter Property="ToolTip" Value="游戏版本受支持！"/>
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding Meta.IsOutdatedVersion}" Value="True">
                                         <Setter Property="Foreground" Value="Crimson"/>
-                                        <Setter Property="ToolTip" Value="Only ver 2.0.119.430 is fully supported."/>
+                                        <Setter Property="ToolTip" Value="仅完全支持 2.0.119.430 版本。"/>
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </TextBlock.Style>
                     </TextBlock>
-                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Mod:" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="模组：" VerticalAlignment="Center" Margin="10,0,10,0"/>
                     <TextBlock Grid.Row="2" Grid.Column="3" Width="100" Margin="5" Text="{Binding Meta.ModCountDisplayText}" ToolTip="{Binding Meta.ModDisplayText}">
                         <TextBlock.Style>
                             <Style TargetType="TextBlock">
@@ -220,9 +220,9 @@
                         </TextBlock.Style>
                     </TextBlock>
                     <StackPanel Grid.Row="10" Grid.ColumnSpan="4" HorizontalAlignment="Right" Orientation="Horizontal">
-                        <Button x:Name="BackupButton" Content="Backup" Width="60" Margin="0,30,10,0" Click="BackupButton_OnClick" IsEnabled="False"/>
-                        <Button x:Name="RestoreButton" Content="Restore" Width="60" Margin="0,30,80,0" Click="RestoreButton_OnClick" IsEnabled="False"/>
-                        <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Right" IsEnabled="False" Width="60" Margin="0,30,0,0" Click="LoadButton_OnClick"/>
+                        <Button x:Name="BackupButton" Content="备份" Width="60" Margin="0,30,10,0" Click="BackupButton_OnClick" IsEnabled="False"/>
+                        <Button x:Name="RestoreButton" Content="恢复" Width="60" Margin="0,30,80,0" Click="RestoreButton_OnClick" IsEnabled="False"/>
+                        <Button x:Name="LoadButton" Content="加载" HorizontalAlignment="Right" IsEnabled="False" Width="60" Margin="0,30,0,0" Click="LoadButton_OnClick"/>
                     </StackPanel>
                 </Grid>
             </Grid>

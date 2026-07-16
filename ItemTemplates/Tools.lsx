@@ -1,0 +1,4018 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="2" minor="0" revision="0" build="0" />
+	<region id="Templates">
+		<node id="root">
+			<children>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h8daf6334g8d69g4a53g9c2dgcbd5847657d9" value="A sturdy broom, perfect for cleaning house." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Broom_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="0291fc01-b613-4f68-90f6-9263537cb680" />
+					<attribute id="Name" type="23" value="TOOL_Broom_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="51d6b9cd-81bc-4db2-8e62-1514e0d12336" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Broom_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="7e2d7f84-b687-4736-9a60-fbc72fa7c5a7" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.10477" />
+							<attribute id="Max" type="12" value="0.218779 0.0911961 1.00033" />
+							<attribute id="Min" type="12" value="-0.218779 -0.0135738 -1.00033" />
+							<attribute id="Radius" type="6" value="0.512655" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h90c0f67dg51e8g4252ga642gd9754844269d" value="A fine metal lock pick for prying open locks when you have, ahem, 'misplaced' the key. More intricate locks require lockpicking ability." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Abil_LockPick" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="06d0eecb-4271-42a7-bd8c-4cbf24927197" />
+					<attribute id="Name" type="23" value="TOOL_LockPick_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="5732e3e3-1ff8-4972-9164-6af2f1fddd12" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1.5" />
+					<attribute id="Stats" type="22" value="TOOL_Lockpick" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="2d51d922-4d9f-46d8-99fa-bd09d9616541" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="1.13311" />
+							<attribute id="Max" type="12" value="0.0937727 1.13196 0.0277979" />
+							<attribute id="Min" type="12" value="-0.0910262 -0.00114334 -0.0281551" />
+							<attribute id="Radius" type="6" value="0.28736" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="18" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h5988eea3g5f41g499aga5b3g31e6984aef7d" value="Spiders crawl from the filthy straw of this broom; no clean sweep here." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Broom_B" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="0b1348a9-3416-4178-b351-ef3c011b7924" />
+					<attribute id="Name" type="23" value="TOOL_Broom_B" />
+					<attribute id="PhysicsTemplate" type="22" value="8101b8fa-70e0-487a-83e8-f1879ac217ab" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Broom_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="b74e51af-c099-49e3-b568-f4ed80c2ed75" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.130032" />
+							<attribute id="Max" type="12" value="0.05 0.12 1.00033" />
+							<attribute id="Min" type="12" value="-0.05 -0.0103253 -0.997332" />
+							<attribute id="Radius" type="6" value="0.518042" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h4d912e7eg3b6fg4198ga67dgb9c61303e0d9" value="A magical, mysterious dye that can turn mere cloth scraps into something ... out of this world!" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Black" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="0e9a6aa9-5e66-45ed-8d2c-99aa02659bd6" />
+					<attribute id="Name" type="23" value="TOOL_UNI_Dye_A_Mystery" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Mystery" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="4dea44b1-a6cc-484a-9f70-ad9e1511b18c" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h31db8d25g1c36g431cg8ee6gbc72e3bbb851" value="Molten midnight, dark as an endless witching hour." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Black" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="0f000ee0-e47a-47aa-888a-b54742467fac" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Black" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Black" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="4dea44b1-a6cc-484a-9f70-ad9e1511b18c" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h6dc492c5g72beg4635g91e1gc387c129407d" value="A doll representing an infamous general from a distant future. If you hold it, you feel an urge to pull levers..." />
+					<attribute id="DisplayName" type="28" handle="hb4d6d4f9g1b4fg4ba6g8876gea462ad6089f" value="General Raze Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Figurine_GeneralRaze_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="11746c9e-54b6-4fec-a9f1-00606d92f610" />
+					<attribute id="Name" type="23" value="TOOL_Figurine_GeneralRaze" />
+					<attribute id="PhysicsTemplate" type="22" value="86ff6b02-0b63-4ea7-ad20-58c2f6d91369" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Figurine_GeneralRaze" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="3fa64b8f-ec1a-49e4-8c02-ff52c007cfb8" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.0912482" />
+							<attribute id="Max" type="12" value="0.18011 0.0643371 0.469876" />
+							<attribute id="Min" type="12" value="-0.18011 -0.0269111 -0.00117396" />
+							<attribute id="Radius" type="6" value="0.149994" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="he6e7f24eg09adg4f8fg97bdgfc6ec384d25e" value="A timberman's faithful friend, this wood axe will chop whatever needs chopping in your neck of the woods." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_WoodAxe_A_C" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="120b7167-87ef-49e2-84b2-2a94e2210e88" />
+					<attribute id="Name" type="23" value="TOOL_WoodAxe_A_C" />
+					<attribute id="PhysicsTemplate" type="22" value="68620276-6490-4388-9dc3-2d478b91835d" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_HatchetTool_1H" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="00a5bfbc-fb65-45ff-ab62-2d3627047eab" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="hedc0d056g0874g446bg8c82g98bb8304615e" value="A sturdy and unremarkable log, ready to be whittled into something more remarkable in your hands." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Log_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="1344f822-55d7-4efe-b8d5-ce4cfbccc3db" />
+					<attribute id="Name" type="23" value="TOOL_Log_A" />
+					<attribute id="PhysicsTemplate" type="22" value="f6ba9a71-e5e3-4c39-a5f7-2282a9b51b39" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="ITEM_Log" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="41314d31-597e-4e3f-9fe7-5cad5d50889b" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.506783" />
+							<attribute id="Max" type="12" value="0.1503 0.502571 0.319291" />
+							<attribute id="Min" type="12" value="-0.400034 -0.00421238 -0.145262" />
+							<attribute id="Radius" type="6" value="0.220157" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h33c83099g1196g4cd5g8c51gb33ef5500e43" value="A weathered brass scope that extends the range of what you can perceive. Useful for sighting enemies from a distance." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Scope_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="1ac66e9e-d3c9-4f39-aa71-ddb26b0eab8b" />
+					<attribute id="Name" type="23" value="TOOL_Scope_A" />
+					<attribute id="PhysicsTemplate" type="22" value="5fe619b2-bdb0-4872-8033-14f642048b7e" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Scope_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="865892df-63ff-4fd0-a0df-d3ccd365b61f" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.107817" />
+							<attribute id="Max" type="12" value="0.071196 0.134286 0.210508" />
+							<attribute id="Min" type="12" value="-0.051241 0.0064696 -0.177187" />
+							<attribute id="Radius" type="6" value="0.163329" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="DisplayName" type="28" handle="h215dfcebg2f3eg4c16ga736gdbdbdd041329" value="Ophelia Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="2c58d40c-4620-4111-bc51-a381fc762efa" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_Ophelia_B" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_Roadsign_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="2c9ca456-abae-4a4a-87a7-911167c84ed4" />
+					<attribute id="Name" type="23" value="TOOL_SignRoad_C" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="6d710aba-868f-4035-bba3-5a4e39df8faf" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="c9a65967-2cf7-46c3-a072-ff7760cc2709" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="debc97bf-fece-4694-9b40-2927be0103c0" />
+									<children>
+										<node id="Parameters" />
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="hb3101891ga103g497bga74bg6ddffb27a86c" value="Ladder" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_Ladder_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="300faf6a-8539-414d-bc7a-8cf900f4c9fb" />
+					<attribute id="Name" type="23" value="TOOL_Ladder_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="0a39beed-a9f4-46f7-8536-406d463e6281" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="f007c7cf-92b5-4059-8801-6b87900671bf" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="9.45039" />
+							<attribute id="Max" type="12" value="0.698525 9.1605 0.0942857" />
+							<attribute id="Min" type="12" value="-0.703655 -0.289886 -0.0920826" />
+							<attribute id="Radius" type="6" value="2.38892" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h2ff5f2eagdd3fg4ea7ga564g54cf2f16bf3b" value="Chop chop!" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_CleaverAxe_A_B" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="31ab1864-6d82-4715-bbb1-4071b315af26" />
+					<attribute id="Name" type="23" value="TOOL_CleaverAxe_A_B" />
+					<attribute id="PhysicsTemplate" type="22" value="cb70094b-0621-4e60-b6f9-95bd7eb009e0" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_Axe_B_1_Cleaver_C" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="0c1f69af-3b91-4afc-a03a-7887da69698a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h63d5e4ecgd3edg486dgb1aag7601fcbca3d5" value="Peer through this closely to analyse and classify equipment; it's as good as the skill of the one who holds it." />
+					<attribute id="DisplayName" type="28" handle="h5a95dd73gfa23g48e6gb163g24e98fae1a25" value="Identifying Glass" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_IdentifyingGlass_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="32288ce4-3d8d-46b3-a655-598350a96201" />
+					<attribute id="Name" type="23" value="TOOL_IdentifyingGlass_A" />
+					<attribute id="PhysicsTemplate" type="22" value="fa97debc-c704-439b-b210-a8158e464629" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_IdentifyingGlass" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="7299fab9-5b0a-45aa-8401-83f352f8b8d0" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="10" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.107817" />
+							<attribute id="Max" type="12" value="0.231196 0.0942864 0.240508" />
+							<attribute id="Min" type="12" value="-0.201241 -0.0135304 -0.237187" />
+							<attribute id="Radius" type="6" value="0.163329" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="16" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h9ff09ceag8100g41e9g8efegdade2be61fb8" value="Although you are not one to make sweeping generalisations, you would admit that brooms are, by and large, not the most effective weapons." />
+					<attribute id="DisplayName" type="28" handle="h5f5a1d53g1c99g450bgb15cgab6a3ab35a0e" value="Old Broom" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Broom_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="3a1e0ab3-0b01-4de0-8432-9a76392349da" />
+					<attribute id="Name" type="23" value="WPN_LUC_Prostitute_Broom_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="51d6b9cd-81bc-4db2-8e62-1514e0d12336" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_Luculla_Prostitute_Broom" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="7e2d7f84-b687-4736-9a60-fbc72fa7c5a7" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.10477" />
+							<attribute id="Max" type="12" value="0.218779 0.0911961 1.00033" />
+							<attribute id="Min" type="12" value="-0.218779 -0.0135738 -1.00033" />
+							<attribute id="Radius" type="6" value="0.512655" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="hfced3613g8353g4197g8b8fgbb3518d29248" value="Use to start digging on the spot. Who knows what you might find?" />
+					<attribute id="DisplayName" type="28" handle="h8776bd07g9199g4a09ga00age3a3a055d207" value="Shovel" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Shovel_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="41486dd2-3fd5-464e-870e-844120cf0517" />
+					<attribute id="Name" type="23" value="TOOL_Shovel_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="818b584a-786b-4472-9309-05afe8c56475" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Shovel_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="UseSound" type="22" value="0511d5c5-9332-4902-a816-430114d8f138" />
+					<attribute id="VisualTemplate" type="22" value="82491873-e718-469d-b6fc-420c709fa937" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.133735" />
+							<attribute id="Max" type="12" value="0.149457 0.121281 0.796525" />
+							<attribute id="Min" type="12" value="-0.149646 -0.0124539 -0.774151" />
+							<attribute id="Radius" type="6" value="0.401121" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="19" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="DefaultState" type="22" value="idle" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Broom_Magic_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="469d5d01-52c5-4188-951d-ea8104ebdef3" />
+					<attribute id="Name" type="23" value="TOOL_Broom_Magic_A" />
+					<attribute id="PhysicsTemplate" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="14e738c1-ee96-4a11-be56-cb5c736115c9" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="h5d0427afgbd5eg42e1gaeedgcd9eb7ad9e03" value="Anvil" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4869c1fe-1529-40a1-95c2-569bbdac47f4" />
+					<attribute id="Name" type="23" value="TOOL_Smith_Anvil_B" />
+					<attribute id="PhysicsTemplate" type="22" value="4b4c762d-8c14-4237-b0be-aee9f34eee0e" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Smith_Anvil_B" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="43eabf99-74f6-47aa-9aa4-c3aca4d91163" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.534051" />
+							<attribute id="Max" type="12" value="0.1 0.541075 0.6" />
+							<attribute id="Min" type="12" value="-0.1 0.00702417 -0.5" />
+							<attribute id="Radius" type="6" value="0.361739" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="23" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="3f11d36f-a9ad-4b70-879c-d6c192cbd57e" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="DialogKey" />
+													<attribute id="Type" type="4" value="4" />
+													<attribute id="Value" type="23" value="GEN_Comment_WhetStone_1_2" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="DisplayTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="5" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h2800ca52g784dg4493g9662g6b4ca3e505e5" value="An eerie glow leaks between the shadowy drawstrings of this pouch. The power of the moon can be used for light or dark purposes." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pouch_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4927aab2-ad6d-44f2-99ac-72b86219d74e" />
+					<attribute id="Name" type="23" value="TOOL_Pouch_Dust_Moon_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e5b7a85d-2704-4201-8323-40e62794eecc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Pouch_Dust_Moon_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="30ff089b-8b2d-4ff8-a009-b5816fdf0582" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.448918" />
+							<attribute id="Max" type="12" value="0.217649 0.424132 0.223888" />
+							<attribute id="Min" type="12" value="-0.226419 -0.024786 -0.213985" />
+							<attribute id="Radius" type="6" value="0.192103" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h968c7687g2366g4bafg9f4cgba6e9bf42ace" value="A luxurious dye, pressed from the grasses of Luculla Forest." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Green" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="49a19fd6-8035-4f4f-bd61-95e85b4b91e3" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Green" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Green" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="fd22d23b-cdd4-463b-8665-d849f415819e" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 -0.05 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h7bb31ab8g8b4ag4f6bg8d24g62b3dda25f6f" value="Harvested from the rarest sea snails, this is a dye fit for kings." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Purple" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4a02aa47-05e2-4442-9936-6683963051f0" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Purple" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Purple" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="653804c2-de62-4537-b9cf-ef05ac7b0137" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="DisplayName" type="28" handle="hba165eeagb3ceg45c0gac99ga0684e30bc90" value="Ophelia Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4ae9b585-1c15-4fbc-a617-c63ccb20ecb7" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_Ophelia_A" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="he16cec59gefa9g4033g946fg7b2612931e46" value="A superior voodoo doll that you can use to mutilate your enemies. Just look at that craftsmanship!" />
+					<attribute id="DisplayName" type="28" handle="h1565717egbb23g4cb7ga99eg4ab3f60a7e7c" value="Well Made Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_C" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4be5c9bf-9b8f-4104-ab17-720592ff1349" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A_Level3" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll3" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="SkillID" type="22" value="Target_VoodooDoll3" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="DisplayName" type="28" handle="h24ab3484g4126g496dg9c20g5349e1722c01" value="Wooden Figurine of Elio" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Figurine_Wood_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4cbbe183-aa6a-4eed-85dd-26aa167fa9b0" />
+					<attribute id="Name" type="23" value="TOOL_Figurine_Wood_Elio" />
+					<attribute id="PhysicsTemplate" type="22" value="ddce11b0-0e83-4145-98a2-944fdc648519" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="a66b0b5e-6a33-4322-9a05-2ad2bb88592f" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.47105" />
+							<attribute id="Max" type="12" value="0.18011 0.469876 0.0424098" />
+							<attribute id="Min" type="12" value="-0.18011 -0.00117395 -0.0488384" />
+							<attribute id="Radius" type="6" value="0.149994" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h46508d26g34d1g4034g84a0g488ba7f934cf" value="A kiss of sunlight, the brightest burnishing for your equipment." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Yellow" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4e6aedcb-75f8-4b05-8ee5-f86b5a86845d" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Yellow" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Yellow" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="1f514de1-984b-48c1-8528-de4956e8ab13" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h8f91117fg71fcg4150gb67eg7fcbfaab6afb" value="A very useful object; a less useful weapon." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Hammer_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4f67d82f-9397-4c48-9134-4679fc9ea770" />
+					<attribute id="Name" type="23" value="TOOL_Hammer_A" />
+					<attribute id="PhysicsTemplate" type="22" value="3ec87976-4f50-4fc2-93a1-7b8e4cd5af93" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Hammer" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="15f25446-b5a6-438d-8096-0f7dfad4c374" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="10" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.105857" />
+							<attribute id="Max" type="12" value="0.122426 0.106583 0.23455" />
+							<attribute id="Min" type="12" value="-0.122426 0.000725992 -0.237553" />
+							<attribute id="Radius" type="6" value="0.135564" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="h5d0427afgbd5eg42e1gaeedgcd9eb7ad9e03" value="Anvil" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_TOOL_Smith_Anvil_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="4fcd8129-ad8c-46ff-9373-329387e5b214" />
+					<attribute id="Name" type="23" value="TOOL_Smith_Anvil_A" />
+					<attribute id="PhysicsTemplate" type="22" value="80a5afe4-4afb-4dc1-805f-c5aa4270d7c8" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Smith_Anvil_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="6fe1ad1b-103c-4adb-a958-b2b93686e1a7" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="1.06844" />
+							<attribute id="Max" type="12" value="0.35 1.07805 0.5" />
+							<attribute id="Min" type="12" value="-0.35 0.00961533 -0.4" />
+							<attribute id="Radius" type="6" value="0.466271" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="23" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="3f11d36f-a9ad-4b70-879c-d6c192cbd57e" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="DialogKey" />
+													<attribute id="Type" type="4" value="4" />
+													<attribute id="Value" type="23" value="GEN_Comment_WhetStone_1_2" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="DisplayTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="5" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h28471d41g7378g45c0gad23g2a0b348b23b6" value="A richly-hued dye siphoned from the blood of thousands of locusts. " />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Red" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="5284e851-3f59-45b7-bce6-cdafdd98da25" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Red" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Red" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="ef3569d6-fc9c-4e35-90d2-334027f32e3b" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="535bde88-6693-43ce-82c1-f7caf65550d3" />
+					<attribute id="Name" type="23" value="TOOL_Smith_Bellows_A" />
+					<attribute id="PhysicsTemplate" type="22" value="b3204764-c8c7-4088-a434-4d809f0ba321" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="1afb43e8-b871-4674-a7b8-8425866d6e85" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_SignOnTheWall_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="53dfbfe3-93ff-413f-b878-cabf05806572" />
+					<attribute id="Name" type="23" value="TOOL_Sign_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="5badc97f-39c5-4e59-8c81-18f2da68e19b" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="Gen_Wood_Weak" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="afe0e9e4-2e20-4b82-86cc-0c8d9c7e6a08" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.897488" />
+							<attribute id="Max" type="12" value="0.360459 0.897488 0.0554863" />
+							<attribute id="Min" type="12" value="-0.361344 0 -0.0554863" />
+							<attribute id="Radius" type="6" value="0.289266" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="5" />
+									<children>
+										<node id="Attributes">
+											<attribute id="templateAfterDestruction" type="22" value="f34aff95-7bee-474e-a031-06aa7af8f36d" />
+											<attribute id="visualDestruction" type="22" value="1d0b795c-881a-48fa-a28e-63169b30a751" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h2ff5f2eagdd3fg4ea7ga564g54cf2f16bf3b" value="Chop chop!" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_CleaverAxe_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="5d9b15b3-6d9f-493a-b81a-8a08c3454146" />
+					<attribute id="Name" type="23" value="TOOL_CleaverAxe_A" />
+					<attribute id="PhysicsTemplate" type="22" value="cb70094b-0621-4e60-b6f9-95bd7eb009e0" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_Axe_B_1_Cleaver_B" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="0c1f69af-3b91-4afc-a03a-7887da69698a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h89e13b5eg0ecfg47cfga354gf49d40823aec" value="A hand-carved figurine of well-oiled Lapiterran wood. Those beady little eyes seem to follow you no matter where you place it." />
+					<attribute id="DisplayName" type="28" handle="h44a6a062g06f7g40b9g8029g1823f7aea94d" value="Wooden Figurine" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Figurine_Wood_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="611fd265-d4a9-421d-bccc-11928510724a" />
+					<attribute id="Name" type="23" value="TOOL_Figurine_Wood_A" />
+					<attribute id="PhysicsTemplate" type="22" value="ddce11b0-0e83-4145-98a2-944fdc648519" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Figurine_Wood_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="a66b0b5e-6a33-4322-9a05-2ad2bb88592f" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="10" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.0912482" />
+							<attribute id="Max" type="12" value="0.18011 0.0643371 0.469876" />
+							<attribute id="Min" type="12" value="-0.18011 -0.0269111 -0.00117396" />
+							<attribute id="Radius" type="6" value="0.149994" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_SignOnTheWall_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="62522686-0d3e-4954-9d0e-0c3bc2ff53f0" />
+					<attribute id="Name" type="23" value="TOOL_SignWall_A_Wood" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="fe2e613f-2bbf-4d61-a4ab-b2045935c2f7" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="bbd0fd6e-771a-42eb-b3bf-066ff5541579" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="debc97bf-fece-4694-9b40-2927be0103c0" />
+									<children>
+										<node id="Parameters" />
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h8e69e696g70c6g4d23g9748g3a9ea1c22ffd" value="A living voodoo doll that you can use to thoroughly annihilate your enemies. It doesn't get any better than this." />
+					<attribute id="DisplayName" type="28" handle="h0595272dg72c8g4152ga712g3af842a895b0" value="Perfect Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_E" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="6c4e5d2a-3053-47cf-bc61-ff3fe112ad95" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A_Level5" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll5" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="SkillID" type="22" value="Target_VoodooDoll5" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h505660e7gdcccg4e08gacecgd3d57fa2d708" value="Smoking ominously, this dye will bleach anything to the hue of bone." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_White" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="75236993-92c7-482b-aba6-7b54b791ed7c" />
+					<attribute id="Name" type="23" value="TOOL_Dye_White" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_White" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="a2538439-70d4-4e4b-a78b-c238a2a64e12" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h3401f0c9gd15ag4f6ag8b4dge3c915bbcddd" value="A common ingredient in cosmetics, the enchanting gleam of this dust highlights even the plainest features with the lustre of the stars." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pouch_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="7652f8f5-bc55-4236-9637-a5d783f8a3be" />
+					<attribute id="Name" type="23" value="TOOL_Pouch_Dust_Star_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e5b7a85d-2704-4201-8323-40e62794eecc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Pouch_Dust_Star_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="30ff089b-8b2d-4ff8-a009-b5816fdf0582" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.448918" />
+							<attribute id="Max" type="12" value="0.217649 0.424132 0.223888" />
+							<attribute id="Min" type="12" value="-0.226419 -0.024786 -0.213985" />
+							<attribute id="Radius" type="6" value="0.192103" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h9d951a49gee90g44f1gb7degb9f698dee3fd" value="Shiny sharp sheep shearer's shears. Try saying THAT five times after a mug of beer." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Shears_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="7d507bb0-7f15-45bc-b2ff-9a9753c4c7c7" />
+					<attribute id="Name" type="23" value="TOOL_Shears_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e3fdf95d-fb57-4bfc-8ff4-9dc59988aafb" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Shears_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="9f5dbe36-c74c-44e6-bb27-c916fbadb372" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.01674" />
+							<attribute id="Max" type="12" value="0.16298 0.0170389 0.0770513" />
+							<attribute id="Min" type="12" value="-0.215283 0.000298886 -0.0770513" />
+							<attribute id="Radius" type="6" value="0.102198" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h1a5f4900g8887g45d7g8514gc74955776161" value="A weighty and finely-crafted sextant that improves your ability to determine accurate angles. It might come in handy somehow." />
+					<attribute id="DisplayName" type="28" handle="h7244fa18gff1eg48aaga8c2g0cd10fd4d164" value="Sextant" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Sextant_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="88d57fc3-56b9-4645-8343-0fbe227d3e93" />
+					<attribute id="Name" type="23" value="TOOL_Sextant_A" />
+					<attribute id="PhysicsTemplate" type="22" value="110d71cf-4c25-47c6-b255-29e89b354b0b" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="Gen_Wood_Weak" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="c15e4011-a6af-487e-95a8-d98fc7f27509" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.107817" />
+							<attribute id="Max" type="12" value="0.231196 0.0942864 0.240508" />
+							<attribute id="Min" type="12" value="-0.201241 -0.0135304 -0.237187" />
+							<attribute id="Radius" type="6" value="0.163329" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="he187aedfg1b90g4db0g8d5fgbf3ed804a4f3" value="A sturdy tong for repairing equipment. A master always keeps his tools close at hand." />
+					<attribute id="DisplayName" type="28" handle="h920eeee4g19cag4a47g9efeg8cfc8d99a647" value="Tong" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Tong_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="8955f424-b4ef-402b-8940-013ca9c409d6" />
+					<attribute id="Name" type="23" value="TOOL_Tong_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="dc563e90-7b11-4de3-a4a7-c18b65733a8d" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Tong_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="b6c013c0-49d9-43d8-bde7-ee51e24f9911" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="1.13311" />
+							<attribute id="Max" type="12" value="0.0937727 1.13196 0.0277979" />
+							<attribute id="Min" type="12" value="-0.0910262 -0.00114334 -0.0281551" />
+							<attribute id="Radius" type="6" value="0.28736" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="17" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_Roadsign_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="89f37f2c-77bc-4afc-a479-c0b6dbce79f9" />
+					<attribute id="Name" type="23" value="TOOL_SignRoad_B" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="b262f2dd-29ca-4895-9225-0c9f1a5d66ec" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="c139a426-7e29-45ed-95b1-e89cb8391a14" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="debc97bf-fece-4694-9b40-2927be0103c0" />
+									<children>
+										<node id="Parameters" />
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h78016557g586ag4fa0g8ca0g7d267ed71e2b" value="A woven voodoo doll that you can use to injure your enemies. More pins, more pain!" />
+					<attribute id="DisplayName" type="28" handle="h1ee1d746g4342g4bf5gae9bgdf67adee1783" value="Regular Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_B" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="8ead2692-6315-410f-8d11-3b6de753e8f0" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A_Level2" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll2" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="SkillID" type="22" value="Target_VoodooDoll2" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h96da2975g3aa8g4f79g90ceg2bf037f543a9" value="Trusty friend of the harvesting farmer, this pitchfork has also been used as an impractical weapon by rampaging serfs." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pitchfork_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="8f9d4746-7401-42b2-9469-3c200efaf7a8" />
+					<attribute id="Name" type="23" value="TOOL_Pitchfork_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="4a027151-db23-4fd6-95cc-038ee12bddfd" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_Pitchfork" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="a4c19d35-7daa-488a-acec-40560319330e" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.133735" />
+							<attribute id="Max" type="12" value="0.149457 0.121281 0.796525" />
+							<attribute id="Min" type="12" value="-0.149646 -0.0124539 -0.774151" />
+							<attribute id="Radius" type="6" value="0.401121" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h5f7287a7g08d4g463fga47bgdc76392577fe" value="Use to consume. Drinks nourish you and can have different effects on your character." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_StinkBom_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="912407ba-168a-476e-9f53-0f4f8ab4cfb2" />
+					<attribute id="Name" type="23" value="TOOL_StinkBom_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="5f3992d0-52d9-4b94-85ce-2e7a8ad9f655" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="CON_Drink_Bottle_Beer_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="c7392da4-1366-4f1e-9d44-e1273a8e8792" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="100" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.418184" />
+							<attribute id="Max" type="12" value="0.0663199 0.416509 0.0630603" />
+							<attribute id="Min" type="12" value="-0.066492 -0.00167482 -0.0632513" />
+							<attribute id="Radius" type="6" value="0.114147" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="StatsId" type="22" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h059b9299g8a59g4204g9a0ag302ec90dc0ce" value="A basic woven voodoo doll that you can use to harm your enemies. Believe!" />
+					<attribute id="DisplayName" type="28" handle="h718a02deg035eg454cgbee7g146494e62911" value="Poorly Made Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="94ab2bab-b70d-473f-9e2e-4e09da4244ef" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A_Level1" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll1" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="SkillID" type="22" value="Target_VoodooDoll1" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="he6e7f24eg09adg4f8fg97bdgfc6ec384d25e" value="A timberman's faithful friend, this wood axe will chop whatever needs chopping in your neck of the woods." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_WoodAxe_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="9728e267-a187-4a46-9bb4-5db3478e0fbf" />
+					<attribute id="Name" type="23" value="TOOL_WoodAxe_A" />
+					<attribute id="PhysicsTemplate" type="22" value="68620276-6490-4388-9dc3-2d478b91835d" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_SmallHandAxeTool_1H" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="00a5bfbc-fb65-45ff-ab62-2d3627047eab" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="hfb3ae304gcd6cg45cfgb455gdaeb18b9615c" value="A fiddly little kit that you can use to disable traps and mines. If only these were available for people, too…" />
+					<attribute id="DisplayName" type="28" handle="h55bc2113g19d6g4823g9f52g7c1e7e5cc816" value="Trap Disarm Toolkit" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Tong_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="9fda335e-2220-4ae9-a4c2-2424d5ef5165" />
+					<attribute id="Name" type="23" value="TOOL_Trap_DisarmToolkit" />
+					<attribute id="PhysicsTemplate" type="22" value="dc563e90-7b11-4de3-a4a7-c18b65733a8d" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Trap_DisarmToolkit" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="b6c013c0-49d9-43d8-bde7-ee51e24f9911" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.105857" />
+							<attribute id="Max" type="12" value="0.122426 0.106583 0.23455" />
+							<attribute id="Min" type="12" value="-0.122426 0.000725992 -0.237553" />
+							<attribute id="Radius" type="6" value="0.135564" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="20" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="hb69a5297gacd4g4fd5g945egf8f161530fe0" value="A down-to-earth stake of splintering wood. Just what you want in your hands if any vampires show up." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_WPN_WoodenStake_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="a977ec45-a29e-404b-8d80-e130fe38a66e" />
+					<attribute id="Name" type="23" value="TOOL_Wood_Stake" />
+					<attribute id="PhysicsTemplate" type="22" value="57b18dff-87d5-4027-bef8-1288499fd25f" />
+					<attribute id="Scale" type="6" value="0.2" />
+					<attribute id="Stats" type="22" value="WPN_Wooden_Stake" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="6f154d10-3a2c-43e5-9e4a-d8b73ce00850" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="2" />
+							<attribute id="Max" type="12" value="0.0939693 2 0.0984638" />
+							<attribute id="Min" type="12" value="-0.1 0 -0.0984977" />
+							<attribute id="Radius" type="6" value="0.504754" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="hc30deaafgf93dg42fag980cg650c8ae125db" value="An exemplary voodoo doll that you can use to destroy your enemies. It took a lot of campfire time to whittle in those facial features; the effort was clearly worth it." />
+					<attribute id="DisplayName" type="28" handle="h0b375f9bgba52g4fe5g8716g449d0ac5acf3" value="Superior Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_D" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="b3c67b72-e194-43d5-bc6e-48062cf873b7" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A_Level4" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll4" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="SkillID" type="22" value="Target_VoodooDoll4" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_SignOnTheWall_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="b5e0941d-367e-4698-afbd-295a62d4ab65" />
+					<attribute id="Name" type="23" value="TOOL_SignWall_A_Gold" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="e74573b7-5f86-42a9-aac5-9afec9f8e96a" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="65313f11-4e2a-4afe-9549-642d9356db52" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="debc97bf-fece-4694-9b40-2927be0103c0" />
+									<children>
+										<node id="Parameters" />
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="DisplayName" type="28" handle="hcb020bb3gfa05g4144g8ceag61414d3f7114" value="Signpost" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Portrait_Gen_Roadsign_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="b775b6c8-a349-4c30-831b-55ada69510b1" />
+					<attribute id="Name" type="23" value="TOOL_SignRoad_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="961d8bd2-c76e-48fc-bd5d-eeaf8d2c6253" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="97a327c0-5d2e-48c0-938e-1a0f35c304bd" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="debc97bf-fece-4694-9b40-2927be0103c0" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="Directions" />
+													<attribute id="Type" type="4" value="4" />
+													<attribute id="Value" type="23" value="CYS_PlazaSign" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="ha569cc3fgf54ag4c63g9d6egc43df19fa3ef" value="A dinky hammer that looks perfect for repairing equipment on the move-- just don't try taking down an orc with it." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Hammer_Repair_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="be7226da-7211-4250-be95-ca780bcdb3df" />
+					<attribute id="Name" type="23" value="TOOL_Hammer_Repair_A" />
+					<attribute id="PhysicsTemplate" type="22" value="3ec87976-4f50-4fc2-93a1-7b8e4cd5af93" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_RepairHammer" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="15f25446-b5a6-438d-8096-0f7dfad4c374" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.105857" />
+							<attribute id="Max" type="12" value="0.122426 0.106583 0.23455" />
+							<attribute id="Min" type="12" value="-0.122426 0.000725992 -0.237553" />
+							<attribute id="Radius" type="6" value="0.135564" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="17" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Consume" type="19" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_CleaverAxe_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="c201d048-fcc9-4f0f-92df-dd3a9ca9c12a" />
+					<attribute id="Name" type="23" value="WPN_UNIQUE_HacksawDecapitator" />
+					<attribute id="PhysicsTemplate" type="22" value="cb70094b-0621-4e60-b6f9-95bd7eb009e0" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_UNIQUE_HacksawDecapitator" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="0c1f69af-3b91-4afc-a03a-7887da69698a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="DefaultState" type="22" value="idle" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="c35690c8-a4ff-44df-a993-9740bc5cb865" />
+					<attribute id="Name" type="23" value="TOOL_Magic_Dishes_A" />
+					<attribute id="PhysicsTemplate" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="3bcdfc2f-123c-4e03-9c4f-126944cc2c33" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="ha5a922d9ga7ddg4b65ga9ffg8446151f867c" value="Elegant! Finished with fine leatherwork and jewelled buckles for a cat dressed to the nines ... one for each life." />
+					<attribute id="DisplayName" type="28" handle="h5a81ecf2gef94g4f41gb62bgcee6ec88de08" value="Collar" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Cat_Collar_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="c50af226-3b49-4080-aa91-79c8d07b7f82" />
+					<attribute id="Name" type="23" value="TOOL_Cat_Collar_A" />
+					<attribute id="Opacity" type="6" value="0.225" />
+					<attribute id="PhysicsTemplate" type="22" value="112ce999-eccb-47b7-a5b3-d30a2c0c2a8d" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="fe224306-bb4d-4eb0-a5a3-f09bbf54a068" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.0881571" />
+							<attribute id="Max" type="12" value="0.131966 0.0893419 0.129563" />
+							<attribute id="Min" type="12" value="-0.131966 0.00118472 -0.147416" />
+							<attribute id="Radius" type="6" value="0.0981546" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="hd5ba6103g92dbg41bdg8212gd8c4b549eaa9" value="Originally gathered from the dwellings of pixies, it's best not to think too hard about the origins of this dust…" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pouch_Purple_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="cd6facc6-54f2-41b1-9d7f-4089d228c4b6" />
+					<attribute id="Name" type="23" value="TOOL_Pouch_Dust_Pixie_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e5b7a85d-2704-4201-8323-40e62794eecc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Pouch_Dust_Pixie_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="30ff089b-8b2d-4ff8-a009-b5816fdf0582" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.448918" />
+							<attribute id="Max" type="12" value="0.217649 0.424132 0.223888" />
+							<attribute id="Min" type="12" value="-0.226419 -0.024786 -0.213985" />
+							<attribute id="Radius" type="6" value="0.192103" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h5250735egc8ceg4464g9436gd680c23ac185" value="A deep turquoise pigment, vibrant as the harbour of Cyseal. Sniff it; it even smells like the sea. Ugh." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Dye_Blue" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="cdffcc74-44a4-4f95-a1ce-5f7bd11e1dc5" />
+					<attribute id="Name" type="23" value="TOOL_Dye_Blue" />
+					<attribute id="PhysicsTemplate" type="22" value="da923fc3-65d5-405b-ba08-27192d19fffc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Dye_Blue" />
+					<attribute id="Tooltip" type="1" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="850f1e6b-2ccd-4f55-9762-fb250d474c31" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.281613" />
+							<attribute id="Max" type="12" value="0.05 0.25 0.05" />
+							<attribute id="Min" type="12" value="-0.05 0 -0.05" />
+							<attribute id="Radius" type="6" value="0.0977165" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+						<node id="Tag">
+							<attribute id="Object" type="22" value="Utility" />
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="hea34e615g13ffg43dfgb1e4g2326f57aad9e" value="A stuffed, woven doll that looks like it could be dangerous to your enemies … if you knew what to do with it." />
+					<attribute id="DisplayName" type="28" handle="hb781be7fgc0fag4a41gaac6g5cdc85b32920" value="Inert Voodoo Doll" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Voodoodoll_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="ce8dd9b4-a76e-4c43-b26f-362677667c44" />
+					<attribute id="Name" type="23" value="TOOL_Voodoodoll_A" />
+					<attribute id="PhysicsTemplate" type="22" value="840120a8-d418-4e1d-8294-899390dd9e4f" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_VoodooDoll" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="d739f2f5-d568-416b-ac34-20dbea7b189a" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.250251" />
+							<attribute id="Max" type="12" value="0.18761 0.204823 0.556787" />
+							<attribute id="Min" type="12" value="-0.18761 -0.0454281 0.0017017" />
+							<attribute id="Radius" type="6" value="0.178804" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h06f08cb4ge713g4c1bg9081g0fe8e17e36be" value="A sprinkle of magic dust is the perfect finishing touch for an enchanting recipe." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pouch_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="ebd3178e-5318-43f7-83ff-3bbaad70cc29" />
+					<attribute id="Name" type="23" value="TOOL_Pouch_Dust_Magic_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e5b7a85d-2704-4201-8323-40e62794eecc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Pouch_Dust_Magic_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="30ff089b-8b2d-4ff8-a009-b5816fdf0582" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.448918" />
+							<attribute id="Max" type="12" value="0.217649 0.424132 0.223888" />
+							<attribute id="Min" type="12" value="-0.226419 -0.024786 -0.213985" />
+							<attribute id="Radius" type="6" value="0.192103" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h034fff90gdd6ag4587gbc97g9ba0dada4523" value="They slip through your fingers, leaving a slimy, pungent and oddly warm residue. Wait, why are you touching them?" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Intestines_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="eccf3f97-a3ba-4dbe-bf02-1dc48e28769b" />
+					<attribute id="Name" type="23" value="TOOL_Intestines_A" />
+					<attribute id="PhysicsTemplate" type="22" value="5de7cfce-a2cf-4990-b8b2-e29bc5a33003" />
+					<attribute id="Scale" type="6" value="0.6" />
+					<attribute id="Stats" type="22" value="TOOL_Intestines_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="e41ea4aa-897e-47bd-96b6-d3505e3d1579" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="2" />
+							<attribute id="Height" type="6" value="0.186783" />
+							<attribute id="Max" type="12" value="0.1503 0.502571 0.319291" />
+							<attribute id="Min" type="12" value="-0.400034 -0.00421238 -0.145262" />
+							<attribute id="Radius" type="6" value="0.480157" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="he42793ffg3d10g464ag94adgb40548dd9c4a" value="A heap of finely-powdered bone dust. If you listen closely, you could swear it whispers tragic tales of its origin. You stuff it deeper into your backpack. Nobody wants to hear that." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Pouch_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="f15254ac-10f1-4ed3-bdae-4a501153fe49" />
+					<attribute id="Name" type="23" value="TOOL_Pouch_Dust_Bone_A" />
+					<attribute id="PhysicsTemplate" type="22" value="e5b7a85d-2704-4201-8323-40e62794eecc" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_Pouch_Dust_Bone_A" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="30ff089b-8b2d-4ff8-a009-b5816fdf0582" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.448918" />
+							<attribute id="Max" type="12" value="0.217649 0.424132 0.223888" />
+							<attribute id="Min" type="12" value="-0.226419 -0.024786 -0.213985" />
+							<attribute id="Radius" type="6" value="0.192103" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Destroyed" type="19" value="True" />
+					<attribute id="DropSound" type="22" value="" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="f34aff95-7bee-474e-a031-06aa7af8f36d" />
+					<attribute id="Name" type="23" value="TOOL_Sign_A_Destruct" />
+					<attribute id="PhysicsTemplate" type="22" value="57e4a699-c5a1-4919-acc2-419a21ac19ae" />
+					<attribute id="PickupSound" type="22" value="" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="bd182e62-3c3d-4ecd-bdac-285c7e788c10" />
+					<children>
+						<node id="AIBounds" />
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_2H_WoodAxe_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="f4fa071b-cf2b-4343-8b78-3efd00e3f801" />
+					<attribute id="Name" type="23" value="TOOL_2H_WoodAxe_A" />
+					<attribute id="PhysicsTemplate" type="22" value="1b7e9aa8-4fda-4d4d-997c-f2e121acb6be" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="TOOL_2H_WoodAxe_A" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="c3b25184-2a2f-4ddb-9ab9-e85ba93f80ff" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.111018" />
+							<attribute id="Max" type="12" value="0.0840259 0.0780413 0.973499" />
+							<attribute id="Min" type="12" value="-0.325935 -0.0329763 -0.385345" />
+							<attribute id="Radius" type="6" value="0.355919" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="Description" type="28" handle="h0f561d41ge855g4167g9bb7gbab9157988e4" value="Only the most desperate foe would enter battle with a harmless-seeming broom. Although the bristles at the end ARE quite scratchy." />
+					<attribute id="DisplayName" type="28" handle="h5f5a1d53g1c99g450bgb15cgab6a3ab35a0e" value="Old Broom" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Broom_B" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="f524e95c-7f90-40e2-b0b9-00410e28214b" />
+					<attribute id="Name" type="23" value="WPN_LUC_Prostitute_Broom_B" />
+					<attribute id="PhysicsTemplate" type="22" value="8101b8fa-70e0-487a-83e8-f1879ac217ab" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="WPN_Luculla_Prostitute_Broom" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="b74e51af-c099-49e3-b568-f4ed80c2ed75" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.130032" />
+							<attribute id="Max" type="12" value="0.267552 0.119707 1.00033" />
+							<attribute id="Min" type="12" value="-0.267552 -0.0103253 -0.997332" />
+							<attribute id="Radius" type="6" value="0.518042" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="19" value="True" />
+					<attribute id="CanBePickedUp" type="19" value="True" />
+					<attribute id="CanSeeThrough" type="19" value="True" />
+					<attribute id="CanShootThrough" type="19" value="True" />
+					<attribute id="CastShadow" type="19" value="False" />
+					<attribute id="Description" type="28" handle="h0f013f27g4323g45aagbb3fg2f90f59f0ef1" value="A handful of sharp iron nails. Closer examination reveals it would be a sin to waste them." />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="GroupID" type="5" value="0" />
+					<attribute id="Icon" type="22" value="Item_TOOL_Nails_A" />
+					<attribute id="IsSurfaceCloudInteractable" type="19" value="True" />
+					<attribute id="IsSurfaceInteractable" type="19" value="True" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="fa60597a-4853-4556-92a5-e4168d3e36bb" />
+					<attribute id="Name" type="23" value="TOOL_Nails_A" />
+					<attribute id="PhysicsTemplate" type="22" value="da02bb1e-0ff2-4a4f-b131-7df502e7f652" />
+					<attribute id="RecieveDecal" type="19" value="False" />
+					<attribute id="Scale" type="6" value="1" />
+					<attribute id="Stats" type="22" value="ITEM_Nails" />
+					<attribute id="Tooltip" type="1" value="2" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="102ab9c7-f4e4-4fcd-ac09-c9a74ca89b03" />
+					<attribute id="WalkThrough" type="19" value="True" />
+					<attribute id="maxStackAmount" type="4" value="99" />
+					<children>
+						<node id="AIBounds">
+							<attribute id="AIType" type="1" value="1" />
+							<attribute id="Height" type="6" value="0.0787502" />
+							<attribute id="Max" type="12" value="0.242356 0.0800743 0.16275" />
+							<attribute id="Min" type="12" value="-0.243288 0.00132409 -0.178467" />
+							<attribute id="Radius" type="6" value="0.149683" />
+						</node>
+						<node id="Equipment">
+							<children>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="CustomBodyMaterials">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+								<node id="VisualResources">
+									<attribute id="Object" type="22" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="OnDestroyActions" />
+						<node id="OnUsePeaceActions" />
+						<node id="Scripts" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

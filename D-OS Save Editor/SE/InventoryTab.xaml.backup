@@ -40,10 +40,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
             <TextBlock Text="筛选："/>
             <TextBox Grid.Column="1" x:Name="SearchTextBox" Uid="SearchText" Margin="10,0,20,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="Auto" TextChanged="SearchTextBox_OnTextChanged"/>
             <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="用空格分隔多个关键词" FontSize="10" FontStyle="Italic"/>
@@ -146,6 +143,9 @@
                 </Grid>
             </GroupBox>
         </WrapPanel>
-        <Button Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" Content="应用修改" Padding="10,2" VerticalAlignment="Bottom" Margin="0,0,92,4" Click="ApplyChangesButton_OnClick"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button x:Name="AddItemButton" Content="添加物品" Width="80" Padding="5,2" Margin="0,0,10,0" Click="AddItemButton_OnClick"/>
+            <Button Content="应用修改" Padding="10,2" Click="ApplyChangesButton_OnClick"/>
+        </StackPanel>
     </Grid>
 </UserControl>

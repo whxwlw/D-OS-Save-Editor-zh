@@ -105,7 +105,7 @@ namespace D_OS_Save_Editor
             if (item == null)
                 return false;
 
-            if (IsFilteredOutByText(item.Name))
+            if (IsFilteredOutByText(item.Name + " " + item.DisplayName))
                 return false;
 
             if (!PassesCheckboxFilter(item))
@@ -326,7 +326,7 @@ namespace D_OS_Save_Editor
                 _AddedItems.Clear();
                 UpdateForm();
 
-                var tooltip = new ToolTip { Content = "Changes have been applied!" };
+                var tooltip = new ToolTip { Content = "修改已应用！" };
                 ((Button)sender).ToolTip = tooltip;
                 tooltip.Opened += async delegate (object o, RoutedEventArgs args)
                 {
@@ -340,12 +340,12 @@ namespace D_OS_Save_Editor
             }
             catch (XmlValidationException ex)
             {
-                MessageBox.Show($"Invalid value entered: {ex.Name}: {ex.Value}. No change has been applied.\n\n{ex.Message}", "Error",
+                MessageBox.Show($"输入的值无效：{ex.Name}：{ex.Value}。未应用任何修改。\n\n{ex.Message}", "错误",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Internal error. No change has been applied.\n\n{ex.Message}", "Error",
+                MessageBox.Show($"内部错误。未应用任何修改。\n\n{ex.Message}", "错误",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -369,6 +369,18 @@ namespace D_OS_Save_Editor
                 else emptySlot++;
             }
             throw new Exception("Can't find empty slot");
+        }
+        // Get Chinese name for an item
+        private string GetChineseName(ItemTemplate t)
+        {
+            if (t == null) return "";
+            try
+            {
+                if (!string.IsNullOrEmpty(t.Stats) && ItemChineseNames.Map.ContainsKey(t.Stats))
+                    return ItemChineseNames.Map[t.Stats];
+            }
+            catch { }
+            return t.Name;
         }
     }
 }

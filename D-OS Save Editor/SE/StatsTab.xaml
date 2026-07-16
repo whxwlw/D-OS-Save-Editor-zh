@@ -45,13 +45,13 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="EXP:" Margin="10,10,20,10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBlock Text="经验值：" Margin="10,10,20,10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                     <TextBox x:Name="ExpTextBox" Grid.Column="1" Margin="0,10,10,10" HorizontalAlignment="Stretch" Width="Auto"/>
                     <StackPanel Grid.Column="3" Orientation="Horizontal">
-                        <TextBlock Text="Reputation:" Margin="10,10,10,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                        <TextBlock Text="声望：" Margin="10,10,10,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
                         <TextBox x:Name="ReputationTextBox" Margin="0,10,10,10"/>
                     </StackPanel>
-                    <TextBlock Grid.Row="1" Text="HP:" Margin="20,0,20,0" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Text="生命值：" Margin="20,0,20,0" VerticalAlignment="Center"/>
 
                     <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
                         <TextBox x:Name="HpCurrentTextBox" Width="45" Margin="0,10,0,10"/>
@@ -79,11 +79,11 @@
             </Grid.RowDefinitions>
             <Rectangle Margin="0,0,0,0" Stroke="Black" Grid.RowSpan="3" Grid.ColumnSpan="2" RadiusX="5" RadiusY="5" StrokeThickness="0.5"/>
             <Rectangle Grid.Column="2" Margin="15,0,0,0" Stroke="Black" Grid.RowSpan="3" Grid.ColumnSpan="4" RadiusX="5" RadiusY="5" StrokeThickness="0.5"/>
-            <TextBlock Text="Attribute points:" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <TextBlock Text="属性点：" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
             <TextBox x:Name="AttributePointsTextBox" Grid.Column="1" Margin="0,10,30,10"/>
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Ability points:" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="技能点：" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
             <TextBox x:Name="AbilityPointsTextBox" Grid.Row="1" Grid.Column="1" Margin="0,10,30,10"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Talent points:" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="天赋点：" Margin="30,10,20,10" VerticalAlignment="Center" HorizontalAlignment="Right"/>
             <TextBox x:Name="TalentPointsTextBox" Grid.Row="2" Grid.Column="1" Margin="0,10,30,10"/>
             <TextBox x:Name="StrengthTextBox" Grid.Column="3" Margin="0,10,30,10" />
             <TextBox x:Name="DexterityTextBox" Grid.Row="1" Grid.Column="3" Margin="0,10,30,10" />
@@ -91,12 +91,12 @@
             <TextBox x:Name="ConstitutionTextBox" Grid.Column="5" Margin="0,10,30,10"/>
             <TextBox x:Name="SpeedTextBox" Grid.Row="1" Grid.Column="5" Margin="0,10,30,10" />
             <TextBox x:Name="PerceptionTextBox" Grid.Row="2" Grid.Column="5" Margin="0,10,30,10" />
-            <TextBlock Grid.Column="2" Margin="45,10,20,10" Text="Strength:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="2" Margin="45,10,20,10" Text="Dexterity:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="2" Margin="45,10,20,10" Text="Intelligence:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="4" Margin="10,10,20,10" Text="Constitution:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="4" Margin="10,10,20,10" Text="Speed:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="4" Margin="10,10,20,10" Text="Perception:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="2" Margin="45,10,20,10" Text="力量：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Margin="45,10,20,10" Text="敏捷：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="2" Margin="45,10,20,10" Text="智力：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="4" Margin="10,10,20,10" Text="体质：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="4" Margin="10,10,20,10" Text="速度：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="4" Margin="10,10,20,10" Text="感知：" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </Grid>
     </StackPanel>
 </UserControl>

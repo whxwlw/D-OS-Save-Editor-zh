@@ -20,7 +20,7 @@ namespace D_OS_Save_Editor
     {
         private string _errorMessage;
         private object _errorData;
-        private string _message = "An error has occurred.";
+        private string _message = "发生了错误。";
 
         public string ErrorMessage
         {
@@ -93,7 +93,7 @@ namespace D_OS_Save_Editor
         {
             Clipboard.SetText($"{ErrorMessage}\n\n{MainWindow.Version}");
             Process.Start(
-                @"https://forms.gle/8hiaHnwEhBpzYnNX7");
+                @"https://docs.google.com/forms/d/e/1FAIpQLSeUeKYdV8InQslbvCvA1rmffJ5t1ieond4W6hpUHkHTH7I7dg/viewform?usp=pp_url&entry.1687355392=Error+report");
             Close();
         }
 

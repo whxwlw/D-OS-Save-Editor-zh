@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:D_OS_Save_Editor"
         mc:Ignorable="d"
-        Title="D-OS Save Editor: Save editor" SizeToContent="WidthAndHeight" MaxWidth="850" Width="655.916" WindowStartupLocation="CenterOwner"
+        Title="D-OS 存档编辑器：编辑存档" SizeToContent="WidthAndHeight" MaxWidth="850" Width="655.916" WindowStartupLocation="CenterOwner"
         Closed="SaveEditor_OnClosed" Closing="SaveEditor_OnClosing"
         UseLayoutRounding="True">
     <Window.Resources>
@@ -90,41 +90,41 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <ComboBox x:Name="PlayerSelectionComboBox" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="120" Height="21.24" SelectionChanged="PlayerSelectionComboBox_OnSelectionChanged"/>
-            <Button x:Name="SavePlayer" Content="Apply" Width="60" Margin="20,20,0,0" Click="SavePlayer_OnClick" ToolTip="Apply changes made to the selected charactor"/>
+            <Button x:Name="SavePlayer" Content="应用" Width="60" Margin="20,20,0,0" Click="SavePlayer_OnClick" ToolTip="Apply changes made to the selected charactor"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
-            <Button x:Name="ResetButton" Content="Reset" VerticalAlignment="Center" Padding="10,2" Margin ="10,20,40,0" Width="60" Click="ResetButton_OnClick"/>
-            <Button x:Name="SaveButton" Content="Save" VerticalAlignment="Center" Padding="10,2" Margin="0,20,0,0" Width="60" Click="SaveButton_OnClick"/>
-            <Button x:Name="CancelButton" Content="Cancel" VerticalAlignment="Center" Padding="10,2" Margin ="10,20,20,0" Width="60" IsCancel="True"/>
-            <Button Style="{StaticResource BugReportButtonStyle}" Width="20" Visibility="Collapsed" HorizontalAlignment="Right" Margin="0,20,20,0" Padding="0" VerticalAlignment="Top" Click="BugReportButton_OnClick" ToolTip="Bug report"/>
+            <Button x:Name="ResetButton" Content="重置" VerticalAlignment="Center" Padding="10,2" Margin ="10,20,40,0" Width="60" Click="ResetButton_OnClick"/>
+            <Button x:Name="SaveButton" Content="保存" VerticalAlignment="Center" Padding="10,2" Margin="0,20,0,0" Width="60" Click="SaveButton_OnClick"/>
+            <Button x:Name="CancelButton" Content="取消" VerticalAlignment="Center" Padding="10,2" Margin ="10,20,20,0" Width="60" IsCancel="True"/>
+            <Button Style="{StaticResource BugReportButtonStyle}" Width="20" Visibility="Collapsed" HorizontalAlignment="Right" Margin="0,20,20,0" Padding="0" VerticalAlignment="Top" Click="BugReportButton_OnClick" ToolTip="错误报告"/>
         </StackPanel>
         <TabControl x:Name="MainTabControl" Grid.Row="2" Margin="20" Grid.ColumnSpan="2" SelectionChanged="MainTabControl_OnSelectionChanged">
-            <TabItem Header="Stats">
+            <TabItem Header="属性">
                 <local:StatsTab x:Name="StatsTab" Margin="10"/>
             </TabItem>
-            <TabItem Header="Skills" Visibility="Collapsed">
+            <TabItem Header="技能" Visibility="Collapsed">
                 <Grid/>
             </TabItem>
-            <TabItem Header="Abilities">
+            <TabItem Header="能力">
                 <local:AbilitiesTab x:Name="AbilitiesTab" Margin="10"/>
             </TabItem>
-            <TabItem Header="Talents" Visibility="Collapsed">
+            <TabItem Header="天赋" Visibility="Collapsed">
                 <Grid/>
             </TabItem>
-            <TabItem Header="Traits">
+            <TabItem Header="特质">
                 <local:TraitsTab x:Name="TraitsTab" Margin="10"/>
             </TabItem>
-            <TabItem Header="Talents">
+            <TabItem Header="天赋">
                 <local:TalentTab x:Name="TalentTab" Margin="10"/>
             </TabItem>
-            <TabItem Header="Inventory" x:Name="InventoryTabItem">
+            <TabItem Header="背包" x:Name="InventoryTabItem">
                 <local:InventoryTab x:Name="InventoryTab" Margin="10"/>
             </TabItem>
-            <TabItem Header="Add Items">
+            <TabItem Header="添加物品">
                 <local:AddItemTab x:Name="AddItemTab" Margin="10"/>
             </TabItem>
 
-            <TabItem Header="Debug" Visibility="Collapsed">
+            <TabItem Header="调试" Visibility="Collapsed">
                 <TabItem.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Width" Value="200"/>

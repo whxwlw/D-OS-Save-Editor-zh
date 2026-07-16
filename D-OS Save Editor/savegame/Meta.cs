@@ -16,8 +16,8 @@ namespace D_OS_Save_Editor
         private string _level;
         private int _difficulty = -1;
 
-        private readonly string[] _difficultyNames = {"Story", "Classic", "Tactician", "Honour"};
-        private readonly string[] _savegameTypeName = { "Manual", "QuickSave", "AutoSave", "Honour Save" };
+        private readonly string[] _difficultyNames = {"探索模式", "经典模式", "策略模式", "荣誉模式"};
+        private readonly string[] _savegameTypeName = { "手动存档", "快速存档", "自动存档", "荣誉模式存档" };
 
 
         //<node id="MetaData">

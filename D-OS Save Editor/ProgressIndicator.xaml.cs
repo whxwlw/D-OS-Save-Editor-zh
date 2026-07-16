@@ -9,9 +9,9 @@ namespace D_OS_Save_Editor
     /// </summary>
     public partial class ProgressIndicator:INotifyPropertyChanged
     {
-        private string _progressText = "Busy...";
+        private string _progressText = "处理中...";
         private bool _canCancel;
-        private string _cancelButtonText = "Cancel";
+        private string _cancelButtonText = "取消";
 
         public string ProgressText
         {

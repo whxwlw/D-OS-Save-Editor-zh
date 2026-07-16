@@ -18,7 +18,7 @@
                 </Style>
             </StackPanel.Resources>
             <WrapPanel x:Name="TalentGroup0" Orientation="Horizontal" MinWidth="400" MinHeight="200"/>
-            <Expander Header="Hidden talents" Margin="0,10,0,0" Foreground="#FFC70202" Background="{x:Null}">
+            <Expander Header="隐藏天赋" Margin="0,10,0,0" Foreground="#FFC70202" Background="{x:Null}">
                 <Expander.Resources>
                     <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CkbStyle}">
                         <Setter Property="Foreground" Value="#FFC70202"/>

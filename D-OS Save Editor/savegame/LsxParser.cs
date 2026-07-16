@@ -190,65 +190,7 @@ namespace D_OS_Save_Editor
             // sort item
             if (item.IsKey == "True")
                 item.ItemSort = ItemSortType.Key;
-            else if (DataTable.GoldNames.Contains(item.StatsName.ToLower()))
-                item.ItemSort = ItemSortType.Gold;
-            else
-            {
-                var nameParts = item.StatsName.ToLower().Split('_');
-
-                if (nameParts[0] == "wpn" &&
-                    DataTable.ArrowTypeNames.Contains(nameParts[1]))
-                    item.ItemSort = ItemSortType.Arrow;
-                else
-                    switch (nameParts[0])
-                    {
-                        case "item":
-                            item.ItemSort = ItemSortType.Item;
-                            break;
-                        case "potion":
-                            item.ItemSort = ItemSortType.Potion;
-                            break;
-                        case "arm":
-                            item.ItemSort = ItemSortType.Armor;
-                            break;
-                        case "wpn":
-                            item.ItemSort = ItemSortType.Weapon;
-                            break;
-                        case "skillbook":
-                            item.ItemSort = ItemSortType.Skillbook;
-                            break;
-                        case "scroll":
-                            item.ItemSort = ItemSortType.Scroll;
-                            break;
-                        case "grn":
-                            item.ItemSort = ItemSortType.Granade;
-                            break;
-                        case "food":
-                            item.ItemSort = ItemSortType.Food;
-                            break;
-                        case "fur":
-                            item.ItemSort = ItemSortType.Furniture;
-                            break;
-                        case "loot":
-                            item.ItemSort = ItemSortType.Loot;
-                            break;
-                        case "quest":
-                            item.ItemSort = ItemSortType.Quest;
-                            break;
-                        case "tool":
-                            item.ItemSort = ItemSortType.Tool;
-                            break;
-                        case "unique":
-                            item.ItemSort = ItemSortType.Unique;
-                            break;
-                        case "book":
-                            item.ItemSort = ItemSortType.Book;
-                            break;
-                        default:
-                            item.ItemSort = ItemSortType.Other;
-                            break;
-                    }
-            }
+                item.ItemSort = DataTable.GetItemSort(item.StatsName);
 
             // check if has generation
             var genNode = node.SelectSingleNode("children/node [@id='Generation']");

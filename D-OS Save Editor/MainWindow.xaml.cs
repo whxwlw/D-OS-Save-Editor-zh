@@ -47,9 +47,10 @@ namespace D_OS_Save_Editor
             DataContext = MainWindowData;
 
 #if LOAD_FROM_JSON
+            var se = new SaveEditor(@"E:\Documents\Visual Studio 2017\Projects\D-OS SE\D-OS Save Editor\test\SaveGame_180404_120803.json");
             //var se = new SaveEditor(@"E:\Documents\Visual Studio 2017\Projects\D-OS SE\D-OS Save Editor\test\SaveGame180403_011306.json");
             se.Show();
-            //this.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
 #endif
             // set default savegame directory
             var dir = GetMostRecentProfile();
@@ -101,7 +102,7 @@ namespace D_OS_Save_Editor
                         // message
                         reg = new Regex(@"Msg=msgStart\{(.*)\}msgEnd");
                         matches = reg.Matches(data);
-                        var msg = "A new version is avaiable!";
+                        var msg = "有新版本可用！";
 
                         if (matches.Count > 0)
                             if (matches[0].Groups.Count <= 2)
@@ -160,8 +161,8 @@ namespace D_OS_Save_Editor
             var gameVer = GetGameVersion(dir);
             if (gameVer == null)
             {
-                MessageBox.Show(this, "Unidentified game version. Please check if you have entered a correct savegames path.",
-                    "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(this, "无法识别的游戏版本。请检查您输入的存档路径是否正确。",
+                    "错误", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -226,8 +227,8 @@ namespace D_OS_Save_Editor
             switch (IsBackedUp(saveGameName))
             {
                 case BackupStatus.None:
-                    var dlgResult = MessageBox.Show(this, "The savegame is not backed up. Do you want to make a backup first?",
-                        "No backup found.", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    var dlgResult = MessageBox.Show(this, "该存档尚未备份。是否要首先创建备份？",
+                        "未找到备份。", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.Yes)
                         BackupSavegame(saveGameName);
                     break;
@@ -235,21 +236,21 @@ namespace D_OS_Save_Editor
                     break;
                 case BackupStatus.Old:
                     dlgResult = MessageBox.Show(this,
-                        "The backup seems to be old because it failed checksum validation. Do you want to make a new backup?",
-                        "Old backup found", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "备份文件似乎已经过时，因为它未通过校验和验证。是否要创建新的备份？",
+                        "发现旧备份", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.Yes)
                         BackupSavegame(saveGameName);
                     break;
                 case BackupStatus.NoChecksum:
                     dlgResult = MessageBox.Show(this,
-                        "The backup may be old because it does not have a checksum file. Do you want to make a new backup?",
-                        "No checksum file", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "备份文件可能已经过时，因为它没有校验和文件。是否要创建新的备份？",
+                        "缺少校验和文件", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.No) return;
                     else break;
                 case BackupStatus.NoImage:
                     dlgResult = MessageBox.Show(this,
-                        "The backup may be old because it does not have a checksum file. Do you want to make a new backup?",
-                        "No image file", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "备份文件可能已经过时，因为它没有图像文件。是否要创建新的备份？",
+                        "缺少图像文件", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.No) return;
                     else break;
             }
@@ -260,7 +261,7 @@ namespace D_OS_Save_Editor
             (Game)GameEditionTextBlock.Tag);
 
             // unpack
-            var progressIndicator = new ProgressIndicator($"Loading {saveGameName}", false) { Owner = Application.Current.MainWindow };
+            var progressIndicator = new ProgressIndicator($"正在加载 {saveGameName}", false) { Owner = Application.Current.MainWindow };
             var progress = new Progress<string>();
             progress.ProgressChanged += (o, s) =>
             {
@@ -268,7 +269,7 @@ namespace D_OS_Save_Editor
             };
 
             if (_getMetaBackgroundWorker.IsBusy)
-                progressIndicator.ProgressText = "Waiting for meta info...";
+                progressIndicator.ProgressText = "正在等待元信息...";
 
             progressIndicator.Show();
 
@@ -280,8 +281,8 @@ namespace D_OS_Save_Editor
             if (MainWindowData.Meta.IsOutdatedVersion)
             {
                 var dlgResult = MessageBox.Show(this,
-                    $"It appears that the version of your game is different from what this SE is purposely created for (ver. {DataTable.SupportedGameVersion}). As a result, changes made to your savegame may corrupt the savegame.\n\nMake sure you make a backup before continuing.",
-                    "Game version incompatible", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                    $"您的游戏版本似乎与此存档编辑器设计的版本（{DataTable.SupportedGameVersion}）不同。因此，对存档所做的修改可能会导致存档损坏。\n\n请确保在继续之前创建备份。",
+                    "游戏版本不兼容", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (dlgResult == MessageBoxResult.Cancel)
                 {
                     progressIndicator.Close();
@@ -293,8 +294,8 @@ namespace D_OS_Save_Editor
             if (MainWindowData.Meta.IsModWarning)
             {
                 var dlgResult = MessageBox.Show(this,
-                    "It appears that you have used mods. As a result, changes made to your savegame may corrupt the savegame.\n\nMake sure you make a backup before continuing.",
-                    "Mods found", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                    "您似乎使用了模组。因此，对存档所做的修改可能会导致存档损坏。\n\n请确保在继续之前创建备份。",
+                    "发现模组", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (dlgResult == MessageBoxResult.Cancel)
                 {
                     progressIndicator.Close();
@@ -336,13 +337,13 @@ namespace D_OS_Save_Editor
             }
             catch (NotAPackageException)
             {
-                MessageBox.Show(this, $"The specified package ({savegame.SavegameFullFile}) is not a savegame file.",
-                    "Failed", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(this, $"指定的包文件（{savegame.SavegameFullFile}）不是存档文件。",
+                    "失败", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
             }
             catch (Exception ex)
             {
-                var er = new ErrorReporting($"Internal error!\n\n{ex}", null);
+                var er = new ErrorReporting($"内部错误！\n\n{ex}", null);
                 er.ShowDialog();
                 return false;
             }
@@ -439,7 +440,7 @@ namespace D_OS_Save_Editor
                 sw.WriteLine(CalculateChecksumFromPng(imagefile));
             }
 
-            MessageBox.Show(this, isNoImage? "Backup successful!\n\n However, no savegame snapshot is found, a blank image is used for computing checksum." : "Backup successful!", "Successful");
+            MessageBox.Show(this, isNoImage? "备份成功！\n\n但未找到存档截图，已使用空白图像计算校验和。" : "备份成功！", "成功");
         }
         #endregion private methods
 
@@ -543,32 +544,32 @@ namespace D_OS_Save_Editor
             switch (IsBackedUp(saveGameName))
             {
                 case BackupStatus.None:
-                    MessageBox.Show("No backup found.");
+                    MessageBox.Show("未找到备份。");
                     return;
                 case BackupStatus.Current:
                     break;
                 case BackupStatus.Old:
                     var dlgResult = MessageBox.Show(this,
-                        "The backup failed checksum validation. Do you still want to restore the savegame? The backup could be an old savegame.",
-                        "Checksum failed", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "备份文件未通过校验和验证。是否仍要恢复存档？该备份可能是旧存档。",
+                        "校验和失败", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.No) return;
                     else break;
                 case BackupStatus.NoChecksum:
                     dlgResult = MessageBox.Show(this,
-                        "No checksum file was found. Do you still want to restore the savegame? The backup could be an old savegame.",
-                        "No checksum file", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "未找到校验和文件。是否仍要恢复存档？该备份可能是旧存档。",
+                        "缺少校验和文件", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.No) return;
                     else break;
                 case BackupStatus.NoImage:
                     dlgResult = MessageBox.Show(this,
-                        "No image file was found. Do you still want to restore the savegame? The backup could be an old savegame.",
-                        "No image file", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                        "未找到图像文件。是否仍要恢复存档？该备份可能是旧存档。",
+                        "缺少图像文件", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (dlgResult == MessageBoxResult.No) return;
                     else break;
             }
 
             File.Copy(backupfile, savegamefile, true);
-            MessageBox.Show(this, "Restore successful!", "Successful");
+            MessageBox.Show(this, "恢复成功！", "成功");
         }
         #endregion ui events
 
@@ -581,7 +582,7 @@ namespace D_OS_Save_Editor
         private void RefreshButton_OnClick(object sender, RoutedEventArgs e)
         {
             LoadSavegamesPath(DirectoryTextBox.Text);
-            var tooltip = new ToolTip { Content = "Refresed!" };
+            var tooltip = new ToolTip { Content = "已刷新！" };
             RefreshButton.ToolTip = tooltip;
             tooltip.Opened += async delegate (object o, RoutedEventArgs args)
             {
@@ -589,7 +590,7 @@ namespace D_OS_Save_Editor
                 await Task.Delay(1000);
                 s.IsOpen = false;
                 await Task.Delay(1000);
-                s.Content = "Refresh savegame list";
+                s.Content = "刷新存档列表";
             };
             tooltip.IsOpen = true;
         }

@@ -25,7 +25,7 @@
         </Style>
     </UserControl.Resources>
     <WrapPanel>
-        <GroupBox Header="Weapons">
+        <GroupBox Header="武器">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -39,12 +39,12 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Single-handed" ToolTip="Single-Handed increases damage when using a single-handed weapon (dagger, sword, axe, or mace). This damage bonus is not applied when dual wielding."/>
-                <TextBlock Text="Two-handed" ToolTip="Two-Handed increases critical chance and critical multiplier when using a two-handed weapon (sword, axe, spear or staff)." Grid.Row="1"/>
-                <TextBlock Text="Dual Wielding" ToolTip="Dual Wielding reduces damage penalty and total Action Point cost when wielding two weapons." Grid.Row="2"/>
-                <TextBlock Text="Bow" ToolTip="Bow increases the damage you do using bows." Grid.Row="3"/>
-                <TextBlock Text="Crossbow" ToolTip="Crossbow increases the critical chance and the critical damage you do using crossbows." Grid.Row="4"/>
-                <TextBlock Text="Wand" ToolTip="Wand increases damage of main hand wand attacks." Grid.Row="5"/>
+                <TextBlock Text="单手" ToolTip="单手技能在使用单手武器（匕首、剑、斧或锤）时增加伤害。此伤害加成在双持时无效。"/>
+                <TextBlock Text="双手" ToolTip="双手技能在使用双手武器（剑、斧、矛或法杖）时增加暴击几率和暴击倍率。" Grid.Row="1"/>
+                <TextBlock Text="双持" ToolTip="双持技能减少双持武器时的伤害惩罚和总行动点消耗。" Grid.Row="2"/>
+                <TextBlock Text="弓术" ToolTip="弓术提升使用弓时的伤害。" Grid.Row="3"/>
+                <TextBlock Text="弩" ToolTip="弩技能增加使用弩时的暴击几率和暴击伤害。" Grid.Row="4"/>
+                <TextBlock Text="魔杖" ToolTip="魔杖技能增加主手魔杖攻击的伤害。" Grid.Row="5"/>
                 <TextBox x:Name="SingleHandedTextBox" Grid.Column="1"/>
                 <TextBox x:Name="TwoHandedTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="DualWieldingTextBox" Grid.Row="2" Grid.Column="1"/>
@@ -53,7 +53,7 @@
                 <TextBox x:Name="WandTextBox" Grid.Row="5" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Defense">
+        <GroupBox Header="防御">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -65,17 +65,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Armour Specialist" ToolTip="Armour Specialist improves your armour rating and decreases your heavy armour movement penalty."/>
-                <TextBlock Text="Shield Specialist" ToolTip="Shield Specialist increases chance of blocking when using shields." Grid.Row="1"/>
-                <TextBlock Text="BodyBuilding" ToolTip="Body Building improves your saving throws against Knocked Down, Burning, Frozen, Bleeding, Crippled, Blinded, Weak, Diseased, Infected, and Drunk." Grid.Row="2"/>
-                <TextBlock Text="Willpower" ToolTip="Willpower improves your saving throws against Feared, Mute, Charmed, Stunned, Cursed, Slowed, Petrified, Decaying Touch, Mark of Death, Remorse, and Shackles of Pain." Grid.Row="32"/>
+                <TextBlock Text="护甲专家" ToolTip="护甲专家提升护甲等级并减轻重甲的移动惩罚。"/>
+                <TextBlock Text="盾牌专家" ToolTip="盾牌专家提升使用盾牌时的格挡几率。" Grid.Row="1"/>
+                <TextBlock Text="强健" ToolTip="强健提升对抗击倒、燃烧、冰冻、流血、残废、致盲、虚弱、疾病、感染和醉酒的豁免检定。" Grid.Row="2"/>
+                <TextBlock Text="意志力" ToolTip="意志力提升对抗恐惧、沉默、魅惑、眩晕、诅咒、减速、石化、腐朽之触、死亡印记、懊悔和痛苦枷锁的豁免检定。" Grid.Row="32"/>
                 <TextBox x:Name="ArmourSpecialistTextBox" Grid.Column="1"/>
                 <TextBox x:Name="ShieldSpecialistTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="BodyBuildingTextBox" Grid.Row="2" Grid.Column="1"/>
                 <TextBox x:Name="WillpowerTextBox" Grid.Row="3" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Skills">
+        <GroupBox Header="技能">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -91,14 +91,14 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Man-At-Arms" ToolTip="Determines how many Man-At-Arms skills you can learn and how many Action Points it costs to use higher level Man-At-Arms skills."/>
-                <TextBlock Text="Expert Marksman" ToolTip="Determines how many Expert Marksman skills you can learn and how many Action Points it costs to use higher level Expert Marksman skills." Grid.Row="1"/>
-                <TextBlock Text="Scoundrel" ToolTip="Determines how many Scoundrel skills you can learn and how many Action Points it costs to use higher level Scoundrel skills." Grid.Row="2"/>
-                <TextBlock Text="Pyrokinetic" ToolTip="Determines how many Pyrokinetic spells you can learn and how many Action Points it costs to use higher level Pyrokinetic spells." Grid.Row="3"/>
-                <TextBlock Text="Hydrosophist" ToolTip="Determines how many Hydrosophist spells you can learn and how many Action Points it costs to use higher level Hydrosophist spells." Grid.Row="4"/>
-                <TextBlock Text="Aerotheurge" ToolTip="Determines how many Aerotheurge spells you can learn and how many Action Points it costs to use higher level Aerotheurge spells." Grid.Row="5"/>
-                <TextBlock Text="Geomancer" ToolTip="Determines how many Geomancer spells you can learn and how many Action Points it costs to use higher level Geomancer spells." Grid.Row="6"/>
-                <TextBlock Text="Witchcraft" ToolTip="Determines how many Witchcraft spells you can learn and how many Action Points it costs to use higher level Witchcraft spells." Grid.Row="7"/>
+                <TextBlock Text="战场技艺" ToolTip="决定你可以学习多少战场技艺技能以及使用高级战场技艺技能所需的行动点。"/>
+                <TextBlock Text="神射技艺" ToolTip="决定你可以学习多少神射技艺技能以及使用高级神射技艺技能所需的行动点。" Grid.Row="1"/>
+                <TextBlock Text="恶棍" ToolTip="决定你可以学习多少恶棍技能以及使用高级恶棍技能所需的行动点。" Grid.Row="2"/>
+                <TextBlock Text="火系" ToolTip="决定你可以学习多少火系法术以及使用高级火系法术所需的行动点。" Grid.Row="3"/>
+                <TextBlock Text="水系" ToolTip="决定你可以学习多少水系法术以及使用高级水系法术所需的行动点。" Grid.Row="4"/>
+                <TextBlock Text="气系" ToolTip="决定你可以学习多少气系法术以及使用高级气系法术所需的行动点。" Grid.Row="5"/>
+                <TextBlock Text="土系" ToolTip="决定你可以学习多少土系法术以及使用高级土系法术所需的行动点。" Grid.Row="6"/>
+                <TextBlock Text="巫术" ToolTip="决定你可以学习多少巫术法术以及使用高级巫术法术所需的行动点。" Grid.Row="7"/>
                 <TextBox x:Name="ManAtArmsTextBox" Grid.Column="1"/>
                 <TextBox x:Name="ExpertMarksmanTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="ScoundrelTextBox" Grid.Row="2" Grid.Column="1"/>
@@ -109,7 +109,7 @@
                 <TextBox x:Name="WitchcraftTextBox" Grid.Row="7" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Craftmanship">
+        <GroupBox Header="工艺">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -121,17 +121,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Blacksmithing" ToolTip="Blacksmithing allows you to repair your own items; the more you invest, the faster you'll work. Required to create and improve metal-enhanced weapons and armour."/>
-                <TextBlock Text="Crafting" ToolTip="Crafting determines what you can craft and the quality of your crafted items. The more invested it is, the faster you can craft." Grid.Row="1"/>
-                <TextBlock Text="Loremaster" ToolTip="Loremaster allows you to examine enemies and identify items. The more invested it is, the more in-depth your intel." Grid.Row="2"/>
-                <TextBlock Text="Telekinesis" ToolTip="With Telekinesis you can move items from a distance. The higher your [1] score, the heavier the items you can telepathically lift, and the farther you can move them." Grid.Row="3"/>
+                <TextBlock Text="锻造" ToolTip="锻造技能允许你修复自己的物品；投入越多，工作速度越快。制造和改进金属强化的武器和护甲需要此技能。"/>
+                <TextBlock Text="手艺" ToolTip="手艺决定你可以制造什么以及制造物品的质量。投入越多，制造速度越快。" Grid.Row="1"/>
+                <TextBlock Text="博学" ToolTip="博学技能允许你检视敌人和鉴定物品。投入越多，情报越详细。" Grid.Row="2"/>
+                <TextBlock Text="念力" ToolTip="念力技能使你可以远程移动物品。你的念力等级越高，可举起的物品越重，移动距离越远。" Grid.Row="3"/>
                 <TextBox x:Name="BlacksmithingTextBox" Grid.Column="1"/>
                 <TextBox x:Name="CraftingTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="LoremasterTextBox" Grid.Row="2" Grid.Column="1"/>
                 <TextBox x:Name="TelekinesisTextBox" Grid.Row="3" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Personality">
+        <GroupBox Header="个性">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -143,17 +143,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Bartering" ToolTip="Bartering determines your haggling skills with traders."/>
-                <TextBlock Text="Charisma" ToolTip="Charisma determines the first impression you make on other people and your talent for Charming, Intimidating, and Reasoning." Grid.Row="1"/>
-                <TextBlock Text="Leadership" ToolTip="Leadership will give boosts to party members and friends that can see you." Grid.Row="2"/>
-                <TextBlock Text="Lucky Charm" ToolTip="Lucky Charm determines your luck in finding extra treasure and improves your Offence Rating." Grid.Row="3"/>
+                <TextBlock Text="交易" ToolTip="交易决定你与商人讨价还价的能力。"/>
+                <TextBlock Text="魅力" ToolTip="魅力技能决定你给他人留下的第一印象以及你魅惑、威吓和说服的天赋。" Grid.Row="1"/>
+                <TextBlock Text="领导力" ToolTip="领导力技能为能看到你的队友和同伴提供增益。" Grid.Row="2"/>
+                <TextBlock Text="幸运" ToolTip="幸运技能决定你发现额外宝藏的运气并提高你的攻击等级。" Grid.Row="3"/>
                 <TextBox x:Name="BarteringTextBox" Grid.Column="1"/>
                 <TextBox x:Name="CharismaTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="LeadershipTextBox" Grid.Row="2" Grid.Column="1"/>
                 <TextBox x:Name="LuckyCharmTextBox" Grid.Row="3" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Nasty Deeds">
+        <GroupBox Header="恶行">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -164,15 +164,15 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Sneaking" ToolTip="Sneaking determines how well you can sneak without getting caught."/>
-                <TextBlock Text="Pickpocketing" ToolTip="Pickpocketing determines what you can steal and who you can successfully pickpocket." Grid.Row="1"/>
-                <TextBlock Text="Lockpicking" ToolTip="Lockpicking determines what complexity of locks you can pick and how fast you can do it." Grid.Row="2"/>
+                <TextBlock Text="潜行" ToolTip="潜行技能决定你潜行不被发现的能力。"/>
+                <TextBlock Text="偷窃" ToolTip="偷窃技能决定你可以偷取什么物品以及成功扒窃的对象。" Grid.Row="1"/>
+                <TextBlock Text="开锁" ToolTip="开锁技能决定你可以开启的锁的复杂程度以及开锁速度。" Grid.Row="2"/>
                 <TextBox x:Name="SneakingTextBox" Grid.Column="1"/>
                 <TextBox x:Name="PickpocketingTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox x:Name="LockpickingTextBox" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Tenebrium" Foreground="#FFA400BD">
+        <GroupBox Header="黯金" Foreground="#FFA400BD">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -182,10 +182,11 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Tenebrium" ToolTip="Tenebrium allows you to equip more powerful Tenebrium weapons."/>
+                <TextBlock Text="黯金" ToolTip="黯金允许你装备更强大的黯金武器。"/>
                 <TextBox x:Name="TenebriumTextBox" Grid.Column="1" HorizontalAlignment="Right" />
-                <TextBlock Text="This ability is unavailable until your character gets the Tenebrium skill." Grid.Row="1" MaxWidth="180" TextWrapping="Wrap" Grid.ColumnSpan="2" Margin="0,10,0,0"/>
+                <TextBlock Text="此能力在你的角色获得黯金技能之前不可用。" Grid.Row="1" MaxWidth="180" TextWrapping="Wrap" Grid.ColumnSpan="2" Margin="0,10,0,0"/>
             </Grid>
         </GroupBox>
     </WrapPanel>
 </UserControl>
+

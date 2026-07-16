@@ -36,7 +36,7 @@ namespace D_OS_Save_Editor
             }
             catch (Exception ex)
             {
-                var er = new ErrorReporting($"Fail to clone players.\n\n{ex}", null);
+                var er = new ErrorReporting($"克隆角色失败。\n\n{ex}", null);
                 er.ShowDialog();
                 throw;
             }
@@ -73,73 +73,15 @@ namespace D_OS_Save_Editor
                             string name = GetAttr(itemToAdd, "Name");
                             string stats = GetAttr(itemToAdd, "Stats");
                             string description = GetAttr(itemToAdd, "Description");
+                            string descHandle = GetAttrHandle(itemToAdd, "Description");
                             string templateKey = GetAttr(itemToAdd, "MapKey");
                             string maxStack = GetAttr(itemToAdd, "maxStackAmount");
 
                             ItemTemplate item = new ItemTemplate(name, description, templateKey, maxStack, stats);
+                            item.DescriptionHandle = descHandle;
 
-                            if (DataTable.GoldNames.Contains(item.Name.ToLower()))
-                                item.ItemSort = ItemSortType.Gold;
-                            else
-                            {
-                                var nameParts = item.Name.ToLower().Split('_');
-
-                                if (nameParts[0] == "wpn" &&
-                                    DataTable.ArrowTypeNames.Contains(nameParts[1]))
-                                    item.ItemSort = ItemSortType.Arrow;
-                                else
-                                    switch (nameParts[0])
-                                    {
-                                        case "item":
-                                            item.ItemSort = ItemSortType.Item;
-                                            break;
-                                        case "potion":
-                                            item.ItemSort = ItemSortType.Potion;
-                                            break;
-                                        case "arm":
-                                            item.ItemSort = ItemSortType.Armor;
-                                            break;
-                                        case "wpn":
-                                            item.ItemSort = ItemSortType.Weapon;
-                                            break;
-                                        case "skillbook":
-                                            item.ItemSort = ItemSortType.Skillbook;
-                                            break;
-                                        case "book_skill":
-                                            item.ItemSort = ItemSortType.Skillbook;
-                                            break;
-                                        case "scroll":
-                                            item.ItemSort = ItemSortType.Scroll;
-                                            break;
-                                        case "grn":
-                                            item.ItemSort = ItemSortType.Granade;
-                                            break;
-                                        case "food":
-                                            item.ItemSort = ItemSortType.Food;
-                                            break;
-                                        case "fur":
-                                            item.ItemSort = ItemSortType.Furniture;
-                                            break;
-                                        case "loot":
-                                            item.ItemSort = ItemSortType.Loot;
-                                            break;
-                                        case "quest":
-                                            item.ItemSort = ItemSortType.Quest;
-                                            break;
-                                        case "tool":
-                                            item.ItemSort = ItemSortType.Tool;
-                                            break;
-                                        case "unique":
-                                            item.ItemSort = ItemSortType.Unique;
-                                            break;
-                                        case "book":
-                                            item.ItemSort = ItemSortType.Book;
-                                            break;
-                                        default:
-                                            item.ItemSort = ItemSortType.Other;
-                                            break;
-                                    }
-                            }
+                            string classifyId = !string.IsNullOrWhiteSpace(item.Stats) ? item.Stats : item.Name;
+                            item.ItemSort = DataTable.GetItemSort(classifyId);
                             result.Add(item); 
                         }
 
@@ -150,6 +92,11 @@ namespace D_OS_Save_Editor
 
             return result;
         }
+        string GetAttrHandle(XElement el, string id) =>
+          el.Descendants("attribute")
+            .FirstOrDefault(a => (string)a.Attribute("id") == id)?
+            .Attribute("handle")?.Value;
+
         string GetAttr(XElement el, string id) =>
           el.Descendants("attribute")
             .FirstOrDefault(a => (string)a.Attribute("id") == id)?
@@ -160,7 +107,7 @@ namespace D_OS_Save_Editor
             InitializeComponent();
             Savegame = savegame;
             GameItems = LoadNewItems();
-            Title = $"D-OS Save Editor: {savegame.SavegameName.Substring(0,savegame.SavegameName.Length-4)}";
+            Title = $"D-OS 存档编辑器：{savegame.SavegameName.Substring(0,savegame.SavegameName.Length-4)}";
 
             // make a copy of players
             try
@@ -169,7 +116,7 @@ namespace D_OS_Save_Editor
             }
             catch (Exception ex)
             {
-                var er = new ErrorReporting($"Fail to clone players.\n\n{ex}", null);
+                var er = new ErrorReporting($"克隆角色失败。\n\n{ex}", null);
                 er.ShowDialog();
                 throw;
             }
@@ -228,7 +175,7 @@ namespace D_OS_Save_Editor
                 TalentTab.SaveEdits();
 
                 // progress indicator
-                var progressIndicator = new ProgressIndicator("Saving", false) { Owner = Application.Current.MainWindow};
+                var progressIndicator = new ProgressIndicator("保存中", false) { Owner = Application.Current.MainWindow};
                 var progress = new Progress<string>();
                 progress.ProgressChanged += (o, s) =>
                 {
@@ -242,16 +189,16 @@ namespace D_OS_Save_Editor
                 // pack up files
                 await Savegame.PackSavegameAsync(progress);
                 
-                progressIndicator.ProgressText = "Successful.";
+                progressIndicator.ProgressText = "保存成功。";
                 progressIndicator.CanCancel = true;
-                progressIndicator.CancelButtonText = "Close";
+                progressIndicator.CancelButtonText = "关闭";
 
                 DialogResult = true;
             }
             catch (Exception ex)
             {
                 SaveButton.IsEnabled = true;
-                var er = new ErrorReporting($"Failed to save changes.\n\n{ex}", null);
+                var er = new ErrorReporting($"保存修改失败。\n\n{ex}", null);
                 er.ShowDialog();
             }
             finally
@@ -300,7 +247,7 @@ namespace D_OS_Save_Editor
                     break;
             }
 
-            MessageBox.Show("A dump file has been created. Thank you!");
+            MessageBox.Show("已创建转储文件。感谢！");
         }
 
         
@@ -314,12 +261,12 @@ namespace D_OS_Save_Editor
                 TraitsTab.SaveEdits();
                 TalentTab.SaveEdits();
 
-                MessageBox.Show(this, "Changes have been applied to the selected character.", "Successful");
+                MessageBox.Show(this, "修改已应用到所选角色。", "成功");
             }
             catch (Exception ex)
             {
                 SavePlayer.IsEnabled = true;
-                var er = new ErrorReporting($"Failed to save changes.\n\n{ex}", null);
+                var er = new ErrorReporting($"保存修改失败。\n\n{ex}", null);
                 er.ShowDialog();
             }
             finally
