@@ -115,9 +115,9 @@
                 <!-- List -->
                 <ListBox Grid.Row="1"
                          x:Name="SelectedItemsListbox"
-                         MinHeight="350"
+                         MaxHeight="350"
                          BorderThickness="1"
-                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"
                          Width="490">
 
                     <ListBox.ItemTemplate>

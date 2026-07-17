@@ -88,6 +88,9 @@ namespace D_OS_Save_Editor
                                     DataTable.ArrowTypeNames.Contains(nameParts[1]))
                                     item.ItemSort = ItemSortType.Arrow;
                                 else
+                                {
+                                    if (nameParts.Length >= 2 && nameParts[0] == "book" && nameParts[1] == "skill")
+                                        nameParts[0] = "skillbook";
                                     switch (nameParts[0])
                                     {
                                         case "item":
@@ -135,10 +138,17 @@ namespace D_OS_Save_Editor
                                         case "book":
                                             item.ItemSort = ItemSortType.Book;
                                             break;
+                                        case "con":
+                                            if (nameParts.Length >= 2 && nameParts[1] == "potion")
+                                                item.ItemSort = ItemSortType.Potion;
+                                            else
+                                                item.ItemSort = ItemSortType.Food;
+                                            break;
                                         default:
                                             item.ItemSort = ItemSortType.Other;
                                             break;
                                     }
+                                }
                             }
                             result.Add(item); 
                         }

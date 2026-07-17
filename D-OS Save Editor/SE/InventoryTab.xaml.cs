@@ -451,20 +451,7 @@ namespace D_OS_Save_Editor
 
         private void SearchTextBox_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            foreach (ListBoxItem i in ItemsListBox.Items)
-            {
-                var listBoxText = ((string)i.Content).ToLower();
-                var searchTerms = SearchTextBox.Text.ToLower().Split(' ');
-                var visiblily = Visibility.Visible;
-                foreach (var s in searchTerms)
-                {
-                    if (listBoxText.Contains(s)) continue;
-
-                    visiblily = Visibility.Collapsed;
-                    break;
-                }
-                i.Visibility = visiblily;
-            }
+            UpdateForm();
         }
 
     }
