@@ -1,4 +1,4 @@
-D-OS Save Editor/obj/
+﻿D-OS Save Editor/obj/
 packages/
 .vs/
 D-OS Save Editor/bin/
@@ -9,3 +9,7 @@ SortGenerationList/bin/
 SortGenerationList/obj/
 *.bak
 DeltaModifier.txt
+*.dll
+*.exe
+*.pdb
+*.config
