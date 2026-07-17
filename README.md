@@ -8,7 +8,7 @@
 
 ## 📥 下载与安装
 
-1. 前往 [Releases](../../releases) 页面下载最新的 `D-OS-Save-Editor#-vX.Y.Z.zip`。
+1. 前往 [Releases](../../releases) 页面下载最新的 `D-OS-Save-Editor-vX.Y.Z.zip`。
 2. 解压到任意目录。
 3. 运行 **`D-OS Save Editor.exe`**。
 
