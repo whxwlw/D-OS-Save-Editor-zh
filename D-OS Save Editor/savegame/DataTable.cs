@@ -1330,6 +1330,10 @@ namespace D_OS_Save_Editor
             default: result = ItemSortType.Other; break;
         }
 
+        // Check for Gold type
+        if (first == "gold" || System.Array.IndexOf(nameParts, "gold") >= 0)
+            result = ItemSortType.Gold;
+
         // Check for arrow type
         if (first == "wpn" && nameParts.Length >= 2 && System.Array.IndexOf(ArrowTypeNames, nameParts[1]) >= 0)
             result = ItemSortType.Arrow;
