@@ -11,3 +11,8 @@ SortGenerationList/obj/
 DeltaModifier.txt
 *.dll
 *.exe
+
+# Deployment files (root copies)
+/D-OS Save Editor.exe
+/ItemTemplates/
+/lslib/

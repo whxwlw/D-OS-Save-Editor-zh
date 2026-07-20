@@ -1,6 +1,6 @@
 ﻿# D-OS 存档编辑器
 
-**神界：原罪——增强版** 的存档修改工具，以[urbanpabs](https://github.com/urbanpabs/D-OS-Save-Editor)的分支为基础进行了汉化及一些修改。
+**神界：原罪——增强版** 的存档修改工具，在各位前辈的基础进行了汉化及一些修改。
 
 > ⚠️ 本修改器仅适用于 **神界：原罪——增强版（Divinity: Original Sin – Enhanced Edition）**的**最新版本2.0.119.430**。请勿用于原版《神界：原罪》或《神界：原罪2》。
 

@@ -1331,7 +1331,7 @@ namespace D_OS_Save_Editor
         }
 
         // Check for Gold type
-        if (first == "gold" || System.Array.IndexOf(nameParts, "gold") >= 0)
+        if (first == "gold" || (nameParts.Length >= 2 && nameParts[nameParts.Length - 1] == "gold"))
             result = ItemSortType.Gold;
 
         // Check for arrow type
